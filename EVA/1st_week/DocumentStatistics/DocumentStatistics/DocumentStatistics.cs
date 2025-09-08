@@ -27,15 +27,12 @@ namespace EvaWeek1
         {
             DistinctWordCount = new Dictionary<string, int>();
 
-            // Split on whitespace
             string[] words = text.Split((char[])null, StringSplitOptions.RemoveEmptyEntries);
 
             foreach (string rawWord in words)
             {
-                // Trim leading/trailing punctuation
                 string word = rawWord.Trim().ToLower();
 
-                // Remove non-letter characters at start and end
                 word = word.TrimStart(c => !Char.IsLetter(c))
                            .TrimEnd(c => !Char.IsLetter(c));
 
@@ -52,7 +49,6 @@ namespace EvaWeek1
         }
     }
 
-    // Extension methods for trimming with predicates
     internal static class StringExtensions
     {
         public static string TrimStart(this string str, Func<char, bool> predicate)

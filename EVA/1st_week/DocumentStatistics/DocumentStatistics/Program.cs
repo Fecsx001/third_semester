@@ -30,10 +30,8 @@ namespace EvaWeek1
                 return;
             }
 
-            // Compute statistics from file
             stat.ComputeDistinctWords(stat.FileContent);
 
-            // User filters
             int minOccurrence = ReadPositiveInt("Minimum occurrence: ");
             int minLength = ReadPositiveInt("Minimum length: ");
 
@@ -49,6 +47,11 @@ namespace EvaWeek1
                 .Where(p => !ignoredWords.Contains(p.Key))
                 .OrderByDescending(p => p.Value)
                 .ThenBy(p => p.Key);
+
+            foreach (var pair in pairs)
+            {
+                Console.WriteLine($"{pair.Key}: {pair.Value}");
+            }
 
             Console.WriteLine("\nFiltered results:\n");
             foreach (var pair in pairs)
