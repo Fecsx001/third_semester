@@ -13,6 +13,7 @@
 
             DocumentStatistics stat = new DocumentStatistics(filePath);
 
+            
             try
             {
                 stat.Load();
