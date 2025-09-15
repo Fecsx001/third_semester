@@ -19,7 +19,7 @@ partial class Clock
         {
             components.Dispose();
         }
-
+ 
         base.Dispose(disposing);
     }
 
