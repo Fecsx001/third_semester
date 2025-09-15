@@ -1,0 +1,17 @@
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\bin\Debug\net8.0-windows\DigiClock.exe
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\bin\Debug\net8.0-windows\DigiClock.deps.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\bin\Debug\net8.0-windows\DigiClock.runtimeconfig.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\bin\Debug\net8.0-windows\DigiClock.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\bin\Debug\net8.0-windows\DigiClock.pdb
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.AssemblyInfoInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.AssemblyInfo.cs
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.csproj.CoreCompileInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.sourcelink.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\refint\DigiClock.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.pdb
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.genruntimeconfig.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\ref\DigiClock.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.Form1.resources
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\DigiClock\obj\Debug\net8.0-windows\DigiClock.csproj.GenerateResource.cache

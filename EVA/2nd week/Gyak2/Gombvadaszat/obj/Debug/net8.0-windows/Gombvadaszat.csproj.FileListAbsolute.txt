@@ -1,0 +1,17 @@
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\bin\Debug\net8.0-windows\Gombvadaszat.exe
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\bin\Debug\net8.0-windows\Gombvadaszat.deps.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\bin\Debug\net8.0-windows\Gombvadaszat.runtimeconfig.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\bin\Debug\net8.0-windows\Gombvadaszat.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\bin\Debug\net8.0-windows\Gombvadaszat.pdb
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.AssemblyInfoInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.AssemblyInfo.cs
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.csproj.CoreCompileInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.sourcelink.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\refint\Gombvadaszat.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.pdb
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.genruntimeconfig.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\ref\Gombvadaszat.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.Form1.resources
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\2nd week\Gyak2\Gombvadaszat\obj\Debug\net8.0-windows\Gombvadaszat.csproj.GenerateResource.cache
