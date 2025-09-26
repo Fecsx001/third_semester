@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quit", "Quit\Quit.csproj", "{AA9ECCFF-CFBD-4360-AC08-9530C5180539}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gombvadaszat", "Gombvadaszat\Gombvadaszat.csproj", "{10679A3D-2C31-47B0-8577-8C1D4A8683E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiClock", "DigiClock\DigiClock.csproj", "{8B9F5E82-3CAE-4903-93C7-B3A2AAEA985B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA9ECCFF-CFBD-4360-AC08-9530C5180539}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA9ECCFF-CFBD-4360-AC08-9530C5180539}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA9ECCFF-CFBD-4360-AC08-9530C5180539}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA9ECCFF-CFBD-4360-AC08-9530C5180539}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10679A3D-2C31-47B0-8577-8C1D4A8683E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10679A3D-2C31-47B0-8577-8C1D4A8683E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10679A3D-2C31-47B0-8577-8C1D4A8683E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10679A3D-2C31-47B0-8577-8C1D4A8683E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9F5E82-3CAE-4903-93C7-B3A2AAEA985B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9F5E82-3CAE-4903-93C7-B3A2AAEA985B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9F5E82-3CAE-4903-93C7-B3A2AAEA985B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9F5E82-3CAE-4903-93C7-B3A2AAEA985B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
