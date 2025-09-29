@@ -9,19 +9,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a76520-739b-4a82-9463-d35c09b4d355" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DocuStat/Persistence/IFileManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2nd week.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3rd week.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.DocuStat/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.DocuStat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DocuStat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/DocuStat.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/DocuStat.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/Model/DocumentStatistics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/Model/DocumentStatistics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DocuStat/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DocuStat/FileContentIndex/45833c41-f484-4ce5-a2db-0aca720b7cbd.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DocuStat/v17/.futdcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DocuStat/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/DocuStat/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/docustat.metadata.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/docustat.projects.v9.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/docustat.strings.v9.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/bin/Debug/net8.0/DocuStat.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.pdb" afterDir="false" />
@@ -29,20 +34,13 @@
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/ref/DocuStat.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/ref/DocuStat.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/refint/DocuStat.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/refint/DocuStat.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/obj/DocuStat.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/DocuStat.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/obj/DocuStat.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/DocuStat.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/obj/DocuStat.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/DocuStat.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStat/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocuStat/obj/rider.project.model.nuget.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStat/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/DocuStatDialog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/DocuStatDialog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStat.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/bin/Debug/net8.0-windows/DocuStatView.pdb" afterDir="false" />
@@ -50,7 +48,6 @@
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.AssemblyInfoInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.pdb" afterDir="false" />
@@ -58,11 +55,9 @@
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/ref/DocuStatView.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/ref/DocuStatView.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/refint/DocuStatView.dll" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/refint/DocuStatView.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/obj/DocuStatView.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/DocuStatView.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/obj/DocuStatView.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/DocuStatView.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DocuStatView/obj/DocuStatView.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/DocuStatView.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocuStatView/obj/rider.project.model.nuget.info" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/DocuStatView/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +87,7 @@
     <setting file="file://$PROJECT_DIR$/DocuStat/Persistence/FileManagerException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DocuStat/Persistence/FileManagerFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DocuStat/Persistence/IFileManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Fecsx/RiderProjects/third_semester/EVA/3rd week/DocuStat/Persistence/PdfFileManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DocuStat/Persistence/PdfFileManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/DocuStat/Persistence/TextFileManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -177,7 +173,8 @@
       <updated>1758554929799</updated>
       <workItem from="1758554932943" duration="129000" />
       <workItem from="1759144444764" duration="1243000" />
-      <workItem from="1759155008904" duration="1740000" />
+      <workItem from="1759155008904" duration="2962000" />
+      <workItem from="1759731958623" duration="850000" />
     </task>
     <task id="LOCAL-00001" summary="WRAESZRD&#10;🥛🥛🥛">
       <option name="closed" value="true" />
@@ -195,7 +192,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758555024348</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="🥛🥨🍜🥪">
+      <option name="closed" value="true" />
+      <created>1759156945386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1759156945386</updated>
+    </task>
+    <task id="LOCAL-00004" summary="🥛🥨🍜🥪">
+      <option name="closed" value="true" />
+      <created>1759157030458</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1759157030458</updated>
+    </task>
+    <task id="LOCAL-00005" summary="esrdtcvbhnmlk">
+      <option name="closed" value="true" />
+      <created>1759157073038</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759157073038</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,12 +224,25 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="sertmol,é" />
     <MESSAGE value="WRAESZRD&#10;" />
     <MESSAGE value="AEWRTUO9IÜÖPTEUOLI13569ÖÜÓ" />
-    <option name="LAST_COMMIT_MESSAGE" value="AEWRTUO9IÜÖPTEUOLI13569ÖÜÓ" />
+    <MESSAGE value="" />
+    <MESSAGE value="esrdtcvbhnmlk" />
+    <option name="LAST_COMMIT_MESSAGE" value="esrdtcvbhnmlk" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

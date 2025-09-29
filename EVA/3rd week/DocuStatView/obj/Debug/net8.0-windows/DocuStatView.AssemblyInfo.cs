@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DocuStatView")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3725b81119521eb27fb830a7826f635727d4430b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2482d2cdab5068d25e247e2e99a6eb788326e3d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocuStatView")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocuStatView")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
