@@ -9,6 +9,8 @@ namespace ELTE.DocuStat.Persistence
     {
         private readonly string _path;
 
+        
+        
         public PdfFileManager(string path)
         {
             _path = path;
