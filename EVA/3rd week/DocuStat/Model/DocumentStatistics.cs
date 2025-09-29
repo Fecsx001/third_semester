@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using ELTE.DocuStat.Persistence;
 
 namespace ELTE.DocuStat.Model
 {
@@ -10,7 +11,7 @@ namespace ELTE.DocuStat.Model
     {
         #region Fields
 
-        private readonly string _filePath;
+        private readonly IFileManager _fileManager;
 
         #endregion
 
@@ -31,9 +32,9 @@ namespace ELTE.DocuStat.Model
 
         #region Constructors
 
-        public DocumentStatistics(string filePath)
+        public DocumentStatistics(IFileManager fileManager)
         {
-            _filePath = filePath;
+            _fileManager = fileManager;
             FileContent = string.Empty;
             DistinctWordCount = new Dictionary<string, int>();
         }
@@ -47,16 +48,23 @@ namespace ELTE.DocuStat.Model
         /// </summary>
         public void Load()
         {
-            FileContent = File.ReadAllText(_filePath);
-            OnFileContentReady();
-            NonWhiteSpaceCharacterCount = FileContent.Count(c => !char.IsWhiteSpace(c));
+            try
+            {
+                FileContent = _fileManager.Load();
+                OnFileContentReady();
+                NonWhiteSpaceCharacterCount = FileContent.Count(c => !char.IsWhiteSpace(c));
 
-            ComputeDistinctWords();
-            SentenceCount = ComputeSentenceCount();
-            ProperNounCount = ComputeProperNounCount();
-            ColemanLieuIndex = ComputeColemanLieuIndex();
-            FleschReadingEase = ComputeFleschReadingEase();
-            OnTextStatisticsReady();
+                ComputeDistinctWords();
+                SentenceCount = ComputeSentenceCount();
+                ProperNounCount = ComputeProperNounCount();
+                ColemanLieuIndex = ComputeColemanLieuIndex();
+                FleschReadingEase = ComputeFleschReadingEase();
+                OnTextStatisticsReady();
+            }
+            catch (FileManagerException ex)
+            {
+                throw new IOException(ex.Message, ex);
+            }
         }
 
         #endregion
@@ -159,7 +167,10 @@ namespace ELTE.DocuStat.Model
         /// <see cref="https://readable.com/readability/coleman-liau-readability-index/"/>
         private double ComputeColemanLieuIndex()
         {
-            double ratio = (double)DistinctWordCount.Sum(w => w.Value) / 100;
+            int totalWords = DistinctWordCount.Sum(w => w.Value);
+            if (totalWords == 0) return 0;
+
+            double ratio = totalWords / 100.0;
 
             double L = NonWhiteSpaceCharacterCount / ratio;
             double S = SentenceCount / ratio;
@@ -177,7 +188,8 @@ namespace ELTE.DocuStat.Model
         /// <see cref="https://readable.com/readability/flesch-reading-ease-flesch-kincaid-grade-level/"/>
         private double ComputeFleschReadingEase()
         {
-            int totalwordCount = DistinctWordCount.Sum(w => w.Value);
+            int totalWordCount = DistinctWordCount.Sum(w => w.Value);
+            if (totalWordCount == 0 || SentenceCount == 0) return 0;
 
             int totalSyllables = 0;
             foreach (var item in DistinctWordCount)
@@ -185,7 +197,7 @@ namespace ELTE.DocuStat.Model
                 totalSyllables += CountSyllables(item.Key) * item.Value;
             }
 
-            return 206.835 - 1.015 * ((double)totalwordCount / SentenceCount) - 84.6 * ((double)totalSyllables / totalwordCount);
+            return 206.835 - 1.015 * ((double)totalWordCount / SentenceCount) - 84.6 * ((double)totalSyllables / totalWordCount);
         }
 
         /// <summary>
@@ -196,6 +208,8 @@ namespace ELTE.DocuStat.Model
         /// </remarks>
         private int CountSyllables(string word)
         {
+            if (string.IsNullOrEmpty(word)) return 0;
+
             bool lastWasVowel = false;
             var vowels = new[] { 'a', 'e', 'i', 'o', 'u', 'y' };
             int count = 0;
@@ -220,7 +234,7 @@ namespace ELTE.DocuStat.Model
                 count--;
             }
 
-            return count;
+            return Math.Max(1, count); // Minimum 1 syllable
         }
         #endregion
 
@@ -229,14 +243,12 @@ namespace ELTE.DocuStat.Model
 
         private void OnFileContentReady()
         {
-            if (FileContentReady != null)
-                FileContentReady.Invoke(this, EventArgs.Empty);
+            FileContentReady?.Invoke(this, EventArgs.Empty);
         }
+        
         private void OnTextStatisticsReady()
         {
             TextStatisticsReady?.Invoke(this, EventArgs.Empty);
         }
-        
-        
     }
 }

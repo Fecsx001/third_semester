@@ -1,4 +1,5 @@
-﻿using ELTE.DocuStat.Model;
+﻿﻿using ELTE.DocuStat.Model;
+using ELTE.DocuStat.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,15 +11,21 @@ namespace ELTE.DocuStat
         static int Main(string[] args)
         {
             string path;
+            IFileManager? fileManager = null;
             do
             {
                 Console.Write("Please enter a valid text file path: ");
                 path = Console.ReadLine()?? "";
+                if (System.IO.File.Exists(path))
+                {
+                    fileManager = FileManagerFactory.CreateForPath(path);
+                }
             }
-            while (System.IO.Path.GetExtension(path) != ".txt"
-                   || !System.IO.File.Exists(path));
+            while (fileManager == null);
 
-            IDocumentStatistics stat = new DocumentStatistics(path);
+            // Egyszerű példányosítás IoC tároló nélkül
+            IDocumentStatistics stat = new DocumentStatistics(fileManager);
+            
             try
             {
                 stat.Load();
@@ -53,12 +60,10 @@ namespace ELTE.DocuStat
                 try
                 {
                     string line = Console.ReadLine() ?? string.Empty;
-                    // If Ctrl+Z is pressed to send the process to background
-                    // when reading input from the console, Console.ReadLine()
-                    // returns null, which must be handled.
 
                     ignoredWords = line.Split(',')
                         .Select(w => w.Trim().ToLower())
+                        .Where(w => !string.IsNullOrEmpty(w))
                         .ToList();
                     success = true;
                 }
