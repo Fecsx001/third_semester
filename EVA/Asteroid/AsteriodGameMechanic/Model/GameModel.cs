@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace AsteriodGameMechanic.Model
 {
     public class GameModel
     {
-        private Random _random;
+        private readonly Random _random;
         private int _score;
         private bool _isGameOver;
         private bool _isPaused;
@@ -37,7 +35,7 @@ namespace AsteriodGameMechanic.Model
             InitializeGame();
         }
 
-        public void InitializeGame()
+        private void InitializeGame()
         {
             Spaceship = new Spaceship(ScreenWidth / 2, ScreenHeight - 50, ScreenWidth);
             Asteroids.Clear();
@@ -53,17 +51,14 @@ namespace AsteriodGameMechanic.Model
         public void Update(TimeSpan elapsedTime)
         {
             if (_isPaused || _isGameOver) return;
-
-            // Update game time
+            
             _gameTime += elapsedTime;
             GameTimeChanged?.Invoke(this, EventArgs.Empty);
-
-            // Calculate difficulty factors based on time and score
+            
             double timeFactor = Math.Min(_gameTime.TotalSeconds / 60.0, 2.0);
             double scoreFactor = Math.Min(_score / 1000.0, 2.0);
             double difficulty = 1.0 + (timeFactor + scoreFactor) / 2.0;
-
-            // Generate new asteroids with varying sizes and speeds based on difficulty
+            
             double spawnProbability = Math.Min(0.05 + (_gameTime.TotalSeconds * 0.0003), 0.3);
             spawnProbability *= difficulty;
 
@@ -71,27 +66,26 @@ namespace AsteriodGameMechanic.Model
             {
                 int x = _random.Next(20, ScreenWidth - 50);
                 
-                // Determine asteroid type based on probability
                 double typeRandom = _random.NextDouble();
                 int baseSize;
                 int speed;
 
-                if (typeRandom < 0.4) // 40% chance: Small fast asteroids
+                if (typeRandom < 0.4) //fast and small(40%)
                 {
                     baseSize = _random.Next(15, 25);
                     speed = (int)(5 + difficulty * 3);
                 }
-                else if (typeRandom < 0.7) // 30% chance: Medium balanced asteroids
+                else if (typeRandom < 0.7) //Medium(30%)
                 {
                     baseSize = _random.Next(25, 40);
                     speed = (int)(4 + difficulty * 2);
                 }
-                else if (typeRandom < 0.9) // 20% chance: Large slow asteroids
+                else if (typeRandom < 0.9) //Large(20%)
                 {
                     baseSize = _random.Next(40, 60);
                     speed = (int)(3 + difficulty * 1);
                 }
-                else // 10% chance: Giant very slow asteroids
+                else //Giant(10%)
                 {
                     baseSize = _random.Next(60, 80);
                     speed = (int)(2 + difficulty * 0.5);
@@ -100,10 +94,11 @@ namespace AsteriodGameMechanic.Model
                 speed = Math.Min(speed, 12);
                 baseSize = Math.Max(15, baseSize);
 
-                Asteroids.Add(new Asteroid(x, -baseSize, ScreenHeight, baseSize, speed));
+                int spawnY = -baseSize;
+                Asteroids.Add(new Asteroid(x, spawnY, ScreenHeight, baseSize, speed));
             }
-
-            // Move asteroids and check collisions
+            
+            //Asteroid move
             for (int i = Asteroids.Count - 1; i >= 0; i--)
             {
                 Asteroids[i].Move();
@@ -112,7 +107,6 @@ namespace AsteriodGameMechanic.Model
                 {
                     _isGameOver = true;
                     
-                    // Check if this is a new high score
                     if (_score > HighScore)
                     {
                         HighScore = _score;
@@ -144,7 +138,6 @@ namespace AsteriodGameMechanic.Model
             HighScoreChanged?.Invoke(this, EventArgs.Empty);
         }
 
-        // ... rest of the existing methods remain the same ...
         private int GetAsteroidBaseSize(Asteroid asteroid)
         {
             return (asteroid.Width + asteroid.Height) / 2;
@@ -212,22 +205,6 @@ namespace AsteriodGameMechanic.Model
             if (difficulty < 2.0) return "Medium";
             if (difficulty < 2.5) return "Hard";
             return "Extreme";
-        }
-
-        public string GetAsteroidDistribution()
-        {
-            int small = 0, medium = 0, large = 0, giant = 0;
-            
-            foreach (var asteroid in Asteroids)
-            {
-                int size = GetAsteroidBaseSize(asteroid);
-                if (size < 25) small++;
-                else if (size < 40) medium++;
-                else if (size < 60) large++;
-                else giant++;
-            }
-            
-            return $"S:{small} M:{medium} L:{large} G:{giant}";
         }
     }
 }

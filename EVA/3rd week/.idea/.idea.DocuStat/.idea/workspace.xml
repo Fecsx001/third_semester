@@ -9,13 +9,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93a76520-739b-4a82-9463-d35c09b4d355" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Persistence/GameData.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Persistence/GamePersistence.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.DocuStat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.DocuStat/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Asteroids/.idea/.idea.Asteroids/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroids/.idea/.idea.Asteroids/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroids/AsteroidGame/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStat/obj/Debug/net8.0/DocuStat.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/DocuStatView/obj/Debug/net8.0-windows/DocuStatView.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/Model/GameModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/Model/GameModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/bin/Debug/net8.0/AsteriodGameMechanic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/bin/Debug/net8.0/AsteriodGameMechanic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/bin/Debug/net8.0/AsteriodGameMechanic.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/bin/Debug/net8.0/AsteriodGameMechanic.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/bin/Debug/net8.0/AsteriodGameMechanic.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/bin/Debug/net8.0/AsteriodGameMechanic.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/ref/AsteriodGameMechanic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/ref/AsteriodGameMechanic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/refint/AsteriodGameMechanic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/Debug/net8.0/refint/AsteriodGameMechanic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteriodGameMechanic/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/Asteroid.sln" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/Asteroid.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteriodGameMechanic.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteriodGameMechanic.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteriodGameMechanic.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteriodGameMechanic.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteriodGameMechanic.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteriodGameMechanic.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteroidGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteroidGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteroidGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteroidGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteroidGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/AsteroidGame.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/SaveData/highscore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/bin/Debug/net8.0-windows/SaveData/highscore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/ref/AsteroidGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/ref/AsteroidGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/refint/AsteroidGame.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/Debug/net8.0-windows/refint/AsteroidGame.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../Asteroid/AsteroidGame/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +164,7 @@
       <workItem from="1759731958623" duration="850000" />
       <workItem from="1759861808555" duration="6000" />
       <workItem from="1759862198971" duration="650000" />
+      <workItem from="1760040648938" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="WRAESZRD&#10;🥛🥛🥛">
       <option name="closed" value="true" />

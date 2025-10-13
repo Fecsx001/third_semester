@@ -6,15 +6,14 @@ namespace AsteriodGameMechanic.Persistence
 {
     public class HighScoreManager
     {
-        private string _saveDirectory;
-        private string _highScoreFile;
+        private readonly string _saveDirectory;
+        private readonly string _highScoreFile;
 
         public HighScoreManager(string gameRootPath)
         {
             _saveDirectory = Path.Combine(gameRootPath, "SaveData");
             _highScoreFile = Path.Combine(_saveDirectory, "highscore.txt");
             
-            // Ensure the SaveData directory exists
             Directory.CreateDirectory(_saveDirectory);
         }
 
@@ -33,11 +32,10 @@ namespace AsteriodGameMechanic.Persistence
             }
             catch (Exception ex)
             {
-                // If there's any error reading the file, return 0
                 System.Diagnostics.Debug.WriteLine($"Error loading high score: {ex.Message}");
             }
             
-            return 0; // Default high score if file doesn't exist or is invalid
+            return 0;
         }
 
         public void SaveHighScore(int score)
@@ -46,7 +44,6 @@ namespace AsteriodGameMechanic.Persistence
             {
                 int currentHighScore = LoadHighScore();
                 
-                // Only save if the new score is higher
                 if (score > currentHighScore)
                 {
                     File.WriteAllText(_highScoreFile, score.ToString(), Encoding.UTF8);
@@ -56,11 +53,6 @@ namespace AsteriodGameMechanic.Persistence
             {
                 System.Diagnostics.Debug.WriteLine($"Error saving high score: {ex.Message}");
             }
-        }
-
-        public string GetHighScoreFilePath()
-        {
-            return _highScoreFile;
         }
 
         public string GetSaveDirectory()

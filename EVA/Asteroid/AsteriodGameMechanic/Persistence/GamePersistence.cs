@@ -1,7 +1,4 @@
 ﻿using AsteriodGameMechanic.Model;
-using System;
-using System.Collections.Generic;
-using System.IO;
 
 namespace AsteriodGameMechanic.Persistence
 {
@@ -21,14 +18,13 @@ namespace AsteriodGameMechanic.Persistence
 
             foreach (var asteroid in gameModel.Asteroids)
             {
-                // We need to store base size and speed for proper loading
-                int baseSize = (asteroid.Width + asteroid.Height) / 2; // Estimate base size
+                int baseSize = (asteroid.Width + asteroid.Height) / 2;
                 gameData.Asteroids.Add(new AsteroidData
                 {
                     X = asteroid.X,
                     Y = asteroid.Y,
                     BaseSize = baseSize,
-                    Speed = 5 // Default speed, you might want to track this better
+                    Speed = 5
                 });
             }
 

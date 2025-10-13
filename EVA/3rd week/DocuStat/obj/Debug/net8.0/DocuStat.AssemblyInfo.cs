@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © Eötvös Loránd University (ELTE) 2022")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1160ccb09153aebab48c70a89e083f491d605325")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3e1b84e8d49e604ba0e92275cbdb95cac4c22d3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocuStat")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocuStat")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

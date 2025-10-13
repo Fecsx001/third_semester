@@ -6,8 +6,8 @@
         public int Y { get; private set; }
         public int Width { get; private set; } = 60;
         public int Height { get; private set; } = 30;
-        private int _screenWidth;
-        private int _speed = 10;
+        private readonly int _screenWidth;
+        private readonly int _speed = 10;
 
         public Spaceship(int x, int y, int screenWidth)
         {

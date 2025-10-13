@@ -1,10 +1,5 @@
 using AsteriodGameMechanic.Model;
 using AsteriodGameMechanic.Persistence;
-using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Windows.Forms;
 
 namespace AsteroidGame
 {
@@ -12,7 +7,7 @@ namespace AsteroidGame
     {
         private GameModel _gameModel;
         private GamePersistence _persistence;
-        private HighScoreManager _highScoreManager;
+        private readonly HighScoreManager _highScoreManager;
         private System.Windows.Forms.Timer _gameTimer;
         private DateTime _lastUpdateTime;
         private bool _leftKeyPressed = false;
@@ -22,11 +17,9 @@ namespace AsteroidGame
         {
             InitializeComponent();
             
-            // Initialize high score manager with application directory
             string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
             _highScoreManager = new HighScoreManager(appDirectory);
             
-            // Load high score before initializing game
             int highScore = _highScoreManager.LoadHighScore();
             
             InitializeGame(highScore);
@@ -43,7 +36,7 @@ namespace AsteroidGame
             _gameModel.HighScoreChanged += GameModel_HighScoreChanged;
 
             _gameTimer = new System.Windows.Forms.Timer();
-            _gameTimer.Interval = 16; // ~60 FPS
+            _gameTimer.Interval = 16; //If my calculations are correct, this should be about 60 FPS so normal for a game
             _gameTimer.Tick += GameTimer_Tick;
             _lastUpdateTime = DateTime.Now;
             _gameTimer.Start();
@@ -54,7 +47,6 @@ namespace AsteroidGame
 
         private void GameModel_HighScoreChanged(object sender, EventArgs e)
         {
-            // Save high score whenever it changes
             _highScoreManager.SaveHighScore(_gameModel.HighScore);
             UpdateStatus();
         }
@@ -85,8 +77,7 @@ namespace AsteroidGame
         private void GameModel_GameOver(object sender, EventArgs e)
         {
             _gameTimer.Stop();
-            
-            // Final check for high score
+
             if (_gameModel.Score > _gameModel.HighScore)
             {
                 _gameModel.SetHighScore(_gameModel.Score);
@@ -157,80 +148,74 @@ namespace AsteroidGame
         {
             var ship = _gameModel.Spaceship;
             
-            // Ship body
+            //body
             g.FillRectangle(Brushes.LightBlue, ship.X, ship.Y, ship.Width, ship.Height);
             g.DrawRectangle(Pens.White, ship.X, ship.Y, ship.Width, ship.Height);
             
-            // Ship cockpit
+            //cockpit
             g.FillRectangle(Brushes.Blue, ship.X + 10, ship.Y - 10, ship.Width - 20, 10);
             g.DrawRectangle(Pens.White, ship.X + 10, ship.Y - 10, ship.Width - 20, 10);
             
-            // Ship engines
+            //engines
             g.FillRectangle(Brushes.Orange, ship.X + 15, ship.Y + ship.Height, ship.Width - 30, 10);
         }
 
         private void DrawAsteroids(Graphics g)
-{
-    foreach (var asteroid in _gameModel.Asteroids)
-    {
-        // Use different colors and details based on asteroid size
-        Brush asteroidBrush;
-        Pen outlinePen;
-        int size = asteroid.Width;
+        {
+            foreach (var asteroid in _gameModel.Asteroids) 
+            {
+                Brush asteroidBrush;
+                Pen outlinePen;
+                int size = asteroid.Width;
 
-        if (size >= 60) // Giant asteroids
-        {
-            asteroidBrush = new SolidBrush(Color.FromArgb(80, 60, 40)); // Brownish
-            outlinePen = Pens.DarkRed;
-            
-            // Detailed surface for giant asteroids
-            g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            
-            // Multiple large craters
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 15, asteroid.Y + 10, 12, 12);
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + asteroid.Width - 20, asteroid.Y + 25, 15, 15);
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 25, asteroid.Y + asteroid.Height - 20, 10, 10);
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 45, asteroid.Y + 15, 8, 8);
+                if (size >= 60) // Giant
+                {
+                    asteroidBrush = new SolidBrush(Color.FromArgb(80, 60, 40));
+                    outlinePen = Pens.DarkRed;
+                    
+                    g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 15, asteroid.Y + 10, 12, 12);
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + asteroid.Width - 20, asteroid.Y + 25, 15, 15);
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 25, asteroid.Y + asteroid.Height - 20, 10, 10);
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 45, asteroid.Y + 15, 8, 8);
+                }
+                else if (size >= 40) // Large
+                {
+                    asteroidBrush = new SolidBrush(Color.FromArgb(100, 80, 60));
+                    outlinePen = Pens.DarkOrange;
+                    
+                    g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 10, asteroid.Y + 8, 8, 8);
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + asteroid.Width - 15, asteroid.Y + 15, 10, 10);
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 20, asteroid.Y + asteroid.Height - 15, 6, 6);
+                }
+                else if (size >= 25) // Medium
+                {
+                    asteroidBrush = Brushes.Gray;
+                    outlinePen = Pens.White;
+                    
+                    g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 8, asteroid.Y + 5, 5, 5);
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + asteroid.Width - 10, asteroid.Y + 10, 4, 4);
+                }
+                else // Small
+                {
+                    asteroidBrush = Brushes.LightGray;
+                    outlinePen = Pens.Yellow;
+                    
+                    g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
+                    
+                    g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 4, asteroid.Y + 3, 2, 2);
+                }
+            }
         }
-        else if (size >= 40) // Large asteroids
-        {
-            asteroidBrush = new SolidBrush(Color.FromArgb(100, 80, 60)); // Dark brown
-            outlinePen = Pens.DarkOrange;
-            
-            g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            
-            // Medium craters
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 10, asteroid.Y + 8, 8, 8);
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + asteroid.Width - 15, asteroid.Y + 15, 10, 10);
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 20, asteroid.Y + asteroid.Height - 15, 6, 6);
-        }
-        else if (size >= 25) // Medium asteroids
-        {
-            asteroidBrush = Brushes.Gray;
-            outlinePen = Pens.White;
-            
-            g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            
-            // Small craters
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 8, asteroid.Y + 5, 5, 5);
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + asteroid.Width - 10, asteroid.Y + 10, 4, 4);
-        }
-        else // Small asteroids
-        {
-            asteroidBrush = Brushes.LightGray;
-            outlinePen = Pens.Yellow;
-            
-            g.FillEllipse(asteroidBrush, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            g.DrawEllipse(outlinePen, asteroid.X, asteroid.Y, asteroid.Width, asteroid.Height);
-            
-            // Tiny details
-            g.FillEllipse(Brushes.DarkSlateGray, asteroid.X + 4, asteroid.Y + 3, 2, 2);
-        }
-    }
-}
 
         private void DrawUIText(Graphics g)
         {
@@ -258,17 +243,14 @@ namespace AsteroidGame
                 string highScoreText = $"High Score: {_gameModel.HighScore}";
                 var size = g.MeasureString(highScoreText, font);
                 
-                // Draw in top-right corner
                 g.DrawString(highScoreText, font, Brushes.Gold, 
                     ClientSize.Width - size.Width - 10, 30);
                 
-                // Draw current score below high score
                 string scoreText = $"Score: {_gameModel.Score}";
                 var scoreSize = g.MeasureString(scoreText, font);
                 g.DrawString(scoreText, font, Brushes.White, 
                     ClientSize.Width - scoreSize.Width - 10, 50);
-
-                // Draw difficulty in top-left corner
+                
                 string difficultyText = $"Difficulty: {_gameModel.GetDifficultyDescription()}";
                 if (_gameModel.GetDifficultyDescription() == "Easy")
                 {
@@ -348,7 +330,6 @@ namespace AsteroidGame
 
         private void NewGame()
         {
-            // Load current high score before starting new game
             int highScore = _highScoreManager.LoadHighScore();
             _gameModel = new GameModel(ClientSize.Width, ClientSize.Height, highScore);
             _gameModel.GameOver += GameModel_GameOver;
@@ -410,8 +391,7 @@ namespace AsteroidGame
                     try
                     {
                         var gameData = _persistence.LoadGame(openDialog.FileName);
-
-                        // Convert AsteroidData to Asteroid objects
+                        
                         var asteroids = new List<Asteroid>();
                         foreach (var asteroidData in gameData.Asteroids)
                         {
@@ -423,8 +403,7 @@ namespace AsteroidGame
                                 asteroidData.Speed
                             ));
                         }
-
-                        // Load current high score
+                        
                         int highScore = _highScoreManager.LoadHighScore();
                         
                         _gameModel = new GameModel(gameData.ScreenWidth, gameData.ScreenHeight, highScore);
@@ -481,8 +460,7 @@ namespace AsteroidGame
                 }
             }
         }
-
-        // Menu event handlers
+        
         private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NewGame();
@@ -563,8 +541,7 @@ namespace AsteroidGame
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            // Save high score when closing the game
-            if (_gameModel != null && _gameModel.Score > _gameModel.HighScore)
+            if (_gameModel.Score > _gameModel.HighScore)
             {
                 _highScoreManager.SaveHighScore(_gameModel.Score);
             }
