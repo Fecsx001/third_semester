@@ -1,56 +1,6 @@
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.deps.json
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.runtimeconfig.json
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Input\TheBoyWhoLived.txt
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.exe
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStatView.exe
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStatView.deps.json
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStatView.runtimeconfig.json
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStatView.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStatView.pdb
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.barcodes.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.bouncy-castle-connector.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.forms.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.io.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.kernel.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.layout.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.pdfa.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.pdfua.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.sign.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.styledxmlparser.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.svg.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\itext.commons.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.DotNet.PlatformAbstractions.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\System.Text.Json.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.pdb
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.csproj.AssemblyReference.cache
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\ELTE.DocuStat.View.DocuStatDialog.resources
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.csproj.GenerateResource.cache
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.AssemblyInfoInputs.cache
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.AssemblyInfo.cs
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.csproj.CoreCompileInputs.cache
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStat.A8D70842.Up2Date
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\refint\DocuStatView.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.pdb
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\DocuStatView.genruntimeconfig.cache
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\ref\DocuStatView.dll
-C:\Users\t5mop2\Downloads\elte_eva_gy05_megoldas(1)\DocuStat\DocuStatView\obj\Debug\net8.0-windows\ELTE.DocuStat.View.DocuStatControl.resources
-C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Input\TheBoyWhoLived.txt
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.deps.json
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.runtimeconfig.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatView\bin\Debug\net8.0-windows\Input\TheBoyWhoLived.txt
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStat.exe
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStatView.exe
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatView\bin\Debug\net8.0-windows\DocuStatView.deps.json

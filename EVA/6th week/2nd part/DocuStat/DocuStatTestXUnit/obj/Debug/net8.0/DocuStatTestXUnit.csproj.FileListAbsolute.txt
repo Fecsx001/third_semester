@@ -1,0 +1,8 @@
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\bin\Debug\net8.0\.msCoverageSourceRootsMapping_DocuStatTestXUnit
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\bin\Debug\net8.0\CoverletSourceRootsMapping_DocuStatTestXUnit
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\obj\Debug\net8.0\DocuStatTestXUnit.csproj.AssemblyReference.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\obj\Debug\net8.0\DocuStatTestXUnit.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\obj\Debug\net8.0\DocuStatTestXUnit.AssemblyInfoInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\obj\Debug\net8.0\DocuStatTestXUnit.AssemblyInfo.cs
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\obj\Debug\net8.0\DocuStatTestXUnit.csproj.CoreCompileInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\6th week\2nd part\DocuStat\DocuStatTestXUnit\obj\Debug\net8.0\DocuStatTestXUnit.sourcelink.json

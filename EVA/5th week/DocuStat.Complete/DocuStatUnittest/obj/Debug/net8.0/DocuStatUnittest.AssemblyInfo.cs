@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DocuStatUnittest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1160ccb09153aebab48c70a89e083f491d605325")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87f0e6d3bbe7ecf5047a3496ff6dc06618f19b7e")]
 [assembly: System.Reflection.AssemblyProductAttribute("DocuStatUnittest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DocuStatUnittest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
