@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "3RoLiRyLv3A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\ImageDownloader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fecsx\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512"
+  ],
+  "logs": []
+}

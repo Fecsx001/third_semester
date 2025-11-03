@@ -114,3 +114,14 @@ def string_title(s: str) -> str:
 # A második játékos ha tud nyerni akkor nyerjen, máskülönben maradjon a véletlenszerű választásnál
 
 # Implementálj egy függvényt foo(n), ami rekurzívan kiszámolja mind az n faktoriálisát, mind az n!-ik fibonacci számot.
+
+def foo(n):
+    if n == 0:
+        return 1, 0
+    elif n == 1:
+        return 1, 1
+    else:
+        fact_n_minus_1, fib_n_minus_1 = foo(n - 1)
+        fact_n = n * fact_n_minus_1
+        fib_n = fib_n_minus_1 + foo(n - 2)[1]
+        return fact_n, fib_n

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteriodGameMechanic", "AsteriodGameMechanic\AsteriodGameMechanic.csproj", "{5CFA4DF6-FBC6-4A07-BC78-11E7BFE4919F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteroidGame", "AsteroidGame\AsteroidGame.csproj", "{0F6D9109-D0C7-4FAE-B904-795152D10F66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteroidGameTest", "AsteroidGameTest\AsteroidGameTest.csproj", "{1C3F7714-D4B2-4753-A16B-0CCEAD13951E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CFA4DF6-FBC6-4A07-BC78-11E7BFE4919F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CFA4DF6-FBC6-4A07-BC78-11E7BFE4919F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CFA4DF6-FBC6-4A07-BC78-11E7BFE4919F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CFA4DF6-FBC6-4A07-BC78-11E7BFE4919F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F6D9109-D0C7-4FAE-B904-795152D10F66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6D9109-D0C7-4FAE-B904-795152D10F66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6D9109-D0C7-4FAE-B904-795152D10F66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6D9109-D0C7-4FAE-B904-795152D10F66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3F7714-D4B2-4753-A16B-0CCEAD13951E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3F7714-D4B2-4753-A16B-0CCEAD13951E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3F7714-D4B2-4753-A16B-0CCEAD13951E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3F7714-D4B2-4753-A16B-0CCEAD13951E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
