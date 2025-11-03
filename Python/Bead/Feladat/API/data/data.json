@@ -1,0 +1,81 @@
+{
+  "Users": [
+    {
+      "id": 1,
+      "name": "Banános Joe",
+      "email": "bjoe@redneckcity.com"
+    },
+    {
+      "id": 2,
+      "name": "Almás Anna",
+      "email": "anna@fruitworld.com"
+    },
+    {
+      "id": 3,
+      "name": "Körtés Károly",
+      "email": "karoly@pearparadise.com"
+    },
+    {
+      "id": 0,
+      "name": "string",
+      "email": "user@example.com"
+    },
+    {
+      "id": 10,
+      "name": "Béla",
+      "email": "bela@example.com"
+    },
+    {
+      "id": 5,
+      "name": "Alma",
+      "email": "user@example.com"
+    },
+    {
+      "id": 8,
+      "name": "Alma",
+      "email": "user@example.com"
+    },
+    {
+      "id": 100,
+      "name": "Alma",
+      "email": "alma@example.com"
+    },
+    {
+      "id": 101,
+      "name": "Alma",
+      "email": "alma@example.com"
+    },
+    {
+      "id": 102,
+      "name": "Alma",
+      "email": "alma@example.com"
+    },
+    {
+      "id": 1020,
+      "name": "Alma",
+      "email": "alma@example.com"
+    }
+  ],
+  "Baskets": [
+    {
+      "id": 1,
+      "user_id": 100,
+      "items": [
+        {
+          "item_id": 2,
+          "name": "Korte",
+          "brand": "Alma",
+          "price": 10.0,
+          "quantity": 10
+        },
+        {
+          "item_id": 2,
+          "name": "Korte",
+          "brand": "Alma",
+          "price": 10.0,
+          "quantity": 10
+        }
+      ]
+    }
+  ]
+}
