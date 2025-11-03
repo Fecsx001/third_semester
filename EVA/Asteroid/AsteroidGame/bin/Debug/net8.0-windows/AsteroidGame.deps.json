@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "AsteroidGame/1.0.0": {
+        "dependencies": {
+          "AsteriodGameMechanic": "1.0.0"
+        },
+        "runtime": {
+          "AsteroidGame.dll": {}
+        }
+      },
+      "AsteriodGameMechanic/1.0.0": {
+        "runtime": {
+          "AsteriodGameMechanic.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AsteroidGame/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AsteriodGameMechanic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
