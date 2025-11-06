@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDownloader", "ImageDownloader\ImageDownloader.csproj", "{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDownloader", "ImageDownloader.csproj", "{8814C3DF-2AE5-45B9-82F2-86C695651CF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8814C3DF-2AE5-45B9-82F2-86C695651CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8814C3DF-2AE5-45B9-82F2-86C695651CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8814C3DF-2AE5-45B9-82F2-86C695651CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8814C3DF-2AE5-45B9-82F2-86C695651CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A7AC350-A80E-4D61-83D7-5BCA1439BDA5}
 	EndGlobalSection
 EndGlobal

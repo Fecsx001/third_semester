@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\",
+  "WorkspaceRootPath": "C:\\Users\\mateo\\OneDrive - Eotvos Lorand Tudomanyegyetem Informatikai Kar\\III_F\u00E9l\u00E9v-Oszi_laptop\\EVA\\8\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|c:\\users\\fecsx\\riderprojects\\third_semester\\eva\\imagedownloader\\imagedownloader\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|solutionrelative:imagedownloader\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8814C3DF-2AE5-45B9-82F2-86C695651CF8}|ImageDownloader.csproj|c:\\users\\mateo\\onedrive - eotvos lorand tudomanyegyetem informatikai kar\\iii_f\u00E9l\u00E9v-oszi_laptop\\eva\\8\\viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8814C3DF-2AE5-45B9-82F2-86C695651CF8}|ImageDownloader.csproj|solutionrelative:viewmodel\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|c:\\users\\fecsx\\riderprojects\\third_semester\\eva\\imagedownloader\\imagedownloader\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|solutionrelative:imagedownloader\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8814C3DF-2AE5-45B9-82F2-86C695651CF8}|ImageDownloader.csproj|c:\\users\\mateo\\onedrive - eotvos lorand tudomanyegyetem informatikai kar\\iii_f\u00E9l\u00E9v-oszi_laptop\\eva\\8\\viewmodel\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8814C3DF-2AE5-45B9-82F2-86C695651CF8}|ImageDownloader.csproj|solutionrelative:viewmodel\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|c:\\users\\fecsx\\riderprojects\\third_semester\\eva\\imagedownloader\\imagedownloader\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|solutionrelative:imagedownloader\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|c:\\users\\fecsx\\riderprojects\\third_semester\\eva\\imagedownloader\\imagedownloader\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1FB5425E-A4EF-4A58-9748-6A6BF0E19C3A}|ImageDownloader\\ImageDownloader.csproj|solutionrelative:imagedownloader\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8814C3DF-2AE5-45B9-82F2-86C695651CF8}|ImageDownloader.csproj|c:\\users\\mateo\\onedrive - eotvos lorand tudomanyegyetem informatikai kar\\iii_f\u00E9l\u00E9v-oszi_laptop\\eva\\8\\viewmodel\\inotifypropertychanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8814C3DF-2AE5-45B9-82F2-86C695651CF8}|ImageDownloader.csproj|solutionrelative:viewmodel\\inotifypropertychanged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,51 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "ImageDownloader\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\MainWindow.xaml",
-              "RelativeToolTip": "ImageDownloader\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-20T14:57:03.297Z",
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\OneDrive - Eotvos Lorand Tudomanyegyetem Informatikai Kar\\III_F\u00E9l\u00E9v-Oszi_laptop\\EVA\\8\\ViewModel\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModel\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\OneDrive - Eotvos Lorand Tudomanyegyetem Informatikai Kar\\III_F\u00E9l\u00E9v-Oszi_laptop\\EVA\\8\\ViewModel\\MainViewModel.cs",
+              "RelativeToolTip": "ViewModel\\MainViewModel.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAA8wD0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T15:23:15.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "ImageDownloader\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\AssemblyInfo.cs",
-              "RelativeToolTip": "ImageDownloader\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DelegateCommand.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\OneDrive - Eotvos Lorand Tudomanyegyetem Informatikai Kar\\III_F\u00E9l\u00E9v-Oszi_laptop\\EVA\\8\\ViewModel\\DelegateCommand.cs",
+              "RelativeDocumentMoniker": "ViewModel\\DelegateCommand.cs",
+              "ToolTip": "C:\\Users\\mateo\\OneDrive - Eotvos Lorand Tudomanyegyetem Informatikai Kar\\III_F\u00E9l\u00E9v-Oszi_laptop\\EVA\\8\\ViewModel\\DelegateCommand.cs",
+              "RelativeToolTip": "ViewModel\\DelegateCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:57:02.218Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\App.xaml.cs",
-              "RelativeDocumentMoniker": "ImageDownloader\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\App.xaml.cs",
-              "RelativeToolTip": "ImageDownloader\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T14:57:01.429Z",
+              "WhenOpened": "2025-11-03T15:22:01.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\App.xaml",
-              "RelativeDocumentMoniker": "ImageDownloader\\App.xaml",
-              "ToolTip": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloader\\ImageDownloader\\App.xaml",
-              "RelativeToolTip": "ImageDownloader\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-10-20T14:56:59.373Z",
+              "Title": "INotifyPropertyChanged.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\OneDrive - Eotvos Lorand Tudomanyegyetem Informatikai Kar\\III_F\u00E9l\u00E9v-Oszi_laptop\\EVA\\8\\ViewModel\\INotifyPropertyChanged.cs",
+              "RelativeDocumentMoniker": "ViewModel\\INotifyPropertyChanged.cs",
+              "ToolTip": "C:\\Users\\mateo\\OneDrive - Eotvos Lorand Tudomanyegyetem Informatikai Kar\\III_F\u00E9l\u00E9v-Oszi_laptop\\EVA\\8\\ViewModel\\INotifyPropertyChanged.cs",
+              "RelativeToolTip": "ViewModel\\INotifyPropertyChanged.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T15:20:18.662Z",
               "EditorCaption": ""
             }
           ]
