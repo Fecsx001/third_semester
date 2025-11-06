@@ -6888,3 +6888,62 @@ TypeError: save_json() missing 1 required positional argument: 'data'
 [I] [2025-10-28 20:33:31] [routers.routes:88] Finished running getusertotal
 [D] [2025-10-28 20:33:31] [routers.routes:95] Return: <starlette.responses.JSONResponse object at 0x6ffc1fc02750>
 [I] [2025-10-28 20:33:31] [uvicorn.access:476] 127.0.0.1:48420 - "GET /getusertotal?userid=100 HTTP/1.1" 200
+[I] [2025-11-06 17:29:59] [root:54] Logging initialized -> /home/fecsx/Documents/Iskola/3. félév/third_semester/Python/Bead/Feladat/API/output/uvicorn_app.log
+[I] [2025-11-06 17:29:59] [uvicorn.error:84] Started server process [3654]
+[I] [2025-11-06 17:29:59] [uvicorn.error:48] Waiting for application startup.
+[I] [2025-11-06 17:29:59] [uvicorn.error:62] Application startup complete.
+[I] [2025-11-06 17:33:07] [uvicorn.error:264] Shutting down
+[I] [2025-11-06 17:33:07] [uvicorn.error:67] Waiting for application shutdown.
+[I] [2025-11-06 17:33:07] [uvicorn.error:76] Application shutdown complete.
+[I] [2025-11-06 17:33:07] [uvicorn.error:94] Finished server process [3654]
+[I] [2025-11-06 17:38:36] [root:54] Logging initialized -> /home/fecsx/Documents/Iskola/3. félév/third_semester/Python/Bead/Feladat/API/output/uvicorn_app.log
+[I] [2025-11-06 17:38:37] [uvicorn.error:84] Started server process [6003]
+[I] [2025-11-06 17:38:37] [uvicorn.error:48] Waiting for application startup.
+[I] [2025-11-06 17:38:37] [uvicorn.error:62] Application startup complete.
+[I] [2025-11-06 17:38:41] [uvicorn.access:476] 127.0.0.1:41818 - "GET / HTTP/1.1" 200
+[I] [2025-11-06 17:38:44] [uvicorn.access:476] 127.0.0.1:41818 - "GET /favicon.ico HTTP/1.1" 404
+[I] [2025-11-06 17:38:48] [uvicorn.access:476] 127.0.0.1:41818 - "GET /docs HTTP/1.1" 200
+[I] [2025-11-06 17:38:48] [uvicorn.access:476] 127.0.0.1:41818 - "GET /openapi.json HTTP/1.1" 200
+[I] [2025-11-06 17:38:55] [schemas.schema:66] Started running validate_id
+[D] [2025-11-06 17:38:55] [schemas.schema:83] Arguments: v=0
+[I] [2025-11-06 17:38:55] [schemas.schema:88] Finished running validate_id
+[D] [2025-11-06 17:38:55] [schemas.schema:95] Return: 0
+[I] [2025-11-06 17:38:55] [routers.routes:66] Started running adduser
+[D] [2025-11-06 17:38:55] [routers.routes:83] Arguments: user=id=0 name='string' email='user@example.com'
+[I] [2025-11-06 17:38:55] [data.filereader:66] Started running get_user_by_id
+[D] [2025-11-06 17:38:55] [data.filereader:83] Arguments: user_id=0
+[I] [2025-11-06 17:38:55] [data.filereader:66] Started running load_json
+[D] [2025-11-06 17:38:55] [data.filereader:85] No arguments provided to load_json
+[I] [2025-11-06 17:38:55] [data.filereader:88] Finished running load_json
+[D] [2025-11-06 17:38:55] [data.filereader:91] Return: dict (size: 888 chars)
+[I] [2025-11-06 17:38:55] [data.filereader:88] Finished running get_user_by_id
+[D] [2025-11-06 17:38:55] [data.filereader:95] Return: {'id': 0, 'name': 'string', 'email': 'user@example.com'}
+[E] [2025-11-06 17:38:55] [routers.routes:98] Error in adduser: 400: User ID already in use
+Traceback (most recent call last):
+  File "/home/fecsx/Documents/Iskola/3. félév/third_semester/Python/Bead/Feladat/API/utils/logger.py", line 87, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fecsx/Documents/Iskola/3. félév/third_semester/Python/Bead/Feladat/API/routers/routes.py", line 41, in adduser
+    raise HTTPException(status_code=400, detail="User ID already in use")
+fastapi.exceptions.HTTPException: 400: User ID already in use
+[I] [2025-11-06 17:38:55] [uvicorn.access:476] 127.0.0.1:41824 - "POST /adduser HTTP/1.1" 400
+[I] [2025-11-06 17:40:56] [uvicorn.error:264] Shutting down
+[I] [2025-11-06 17:40:56] [uvicorn.error:67] Waiting for application shutdown.
+[I] [2025-11-06 17:40:56] [uvicorn.error:76] Application shutdown complete.
+[I] [2025-11-06 17:40:56] [uvicorn.error:94] Finished server process [6003]
+[I] [2025-11-06 17:40:57] [root:54] Logging initialized -> /home/fecsx/Documents/Iskola/3. félév/third_semester/Python/Bead/Feladat/API/output/uvicorn_app.log
+[I] [2025-11-06 17:40:57] [uvicorn.error:84] Started server process [7258]
+[I] [2025-11-06 17:40:57] [uvicorn.error:48] Waiting for application startup.
+[I] [2025-11-06 17:40:57] [uvicorn.error:62] Application startup complete.
+[I] [2025-11-06 17:44:12] [uvicorn.error:264] Shutting down
+[I] [2025-11-06 17:44:12] [uvicorn.error:67] Waiting for application shutdown.
+[I] [2025-11-06 17:44:12] [uvicorn.error:76] Application shutdown complete.
+[I] [2025-11-06 17:44:12] [uvicorn.error:94] Finished server process [7258]
+[I] [2025-11-06 17:44:13] [root:54] Logging initialized -> /home/fecsx/Documents/Iskola/3. félév/third_semester/Python/Bead/Feladat/API/output/uvicorn_app.log
+[I] [2025-11-06 17:44:13] [uvicorn.error:84] Started server process [7511]
+[I] [2025-11-06 17:44:13] [uvicorn.error:48] Waiting for application startup.
+[I] [2025-11-06 17:44:13] [uvicorn.error:62] Application startup complete.
+[I] [2025-11-06 17:44:27] [uvicorn.error:264] Shutting down
+[I] [2025-11-06 17:44:27] [uvicorn.error:67] Waiting for application shutdown.
+[I] [2025-11-06 17:44:27] [uvicorn.error:76] Application shutdown complete.
+[I] [2025-11-06 17:44:27] [uvicorn.error:94] Finished server process [7511]

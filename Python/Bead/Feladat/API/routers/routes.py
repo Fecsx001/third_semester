@@ -1,3 +1,5 @@
+import logging
+
 from schemas.schema import User
 from schemas.schema import Basket
 from schemas.schema import Item
@@ -15,6 +17,8 @@ from data.filereader import (
     get_user_by_id,
     load_json,
 )
+
+logger = logging.getLogger(__name__)
 
 """
 
@@ -42,6 +46,8 @@ def adduser(user: User) -> User:
     except ValueError:
         add_user(user.model_dump())
         return JSONResponse(content=user.model_dump(), status_code=200)
+
+    """With the prewriten template this is the easiest solution, but not the best practice, due to the error msg-s in the log"""
 
 
 @routers.post("/addshoppingbag")
@@ -109,6 +115,9 @@ def updateitem(userid: int, itemid: int, updateItem: Item) -> Basket:
         raise HTTPException(
             status_code=404, detail=f"No basket found for user: {userid}"
         )
+    except HTTPException as e:
+        logger.error(str(e))
+        raise e
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
 
