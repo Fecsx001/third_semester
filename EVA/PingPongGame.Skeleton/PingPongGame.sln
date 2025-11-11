@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PingPongGame.Model", "PingPongGame.Model\PingPongGame.Model.csproj", "{990F527B-5801-4675-A882-A6411A7FF5C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPongGame", "PingPongGame\PingPongGame.csproj", "{CF1CB6D5-BB46-491D-944F-CDBA06868E0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{990F527B-5801-4675-A882-A6411A7FF5C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990F527B-5801-4675-A882-A6411A7FF5C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990F527B-5801-4675-A882-A6411A7FF5C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990F527B-5801-4675-A882-A6411A7FF5C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF1CB6D5-BB46-491D-944F-CDBA06868E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1CB6D5-BB46-491D-944F-CDBA06868E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1CB6D5-BB46-491D-944F-CDBA06868E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1CB6D5-BB46-491D-944F-CDBA06868E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A71FD2E1-4209-4471-8425-3E8F114097FB}
+	EndGlobalSection
+EndGlobal

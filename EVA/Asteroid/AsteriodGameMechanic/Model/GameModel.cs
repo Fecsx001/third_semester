@@ -1,15 +1,24 @@
 ﻿using System.Drawing;
+using System.Security.Principal;
+using System.Timers;
+using AsteriodGameMechanic.Persistence;
 
 namespace AsteriodGameMechanic.Model
 {
     public class GameModel
     {
+        private readonly IHighScoreManager _highScoreManager;
         private readonly Random _random;
         private int _score;
         private bool _isGameOver;
         private bool _isPaused;
         private TimeSpan _gameTime;
-        
+
+        private System.Timers.Timer _timer;
+        private const int TickInterval = 16;
+        private DateTime _lastUpdateTime;
+        private bool _isMovingLeft;
+        private bool _isMovingRight;
         public Spaceship Spaceship { get; private set; }
         public List<Asteroid> Asteroids { get; private set; }
         public int ScreenWidth { get; private set; }
@@ -25,13 +34,20 @@ namespace AsteriodGameMechanic.Model
         public event EventHandler GameTimeChanged;
         public event EventHandler HighScoreChanged;
 
-        public GameModel(int screenWidth, int screenHeight, int initialHighScore = 0)
+        public GameModel(int screenWidth, int screenHeight, IHighScoreManager highScoreManager)
         {
             ScreenWidth = screenWidth;
             ScreenHeight = screenHeight;
+            _highScoreManager = highScoreManager;
             _random = new Random();
             Asteroids = new List<Asteroid>();
-            HighScore = initialHighScore;
+            HighScore = _highScoreManager.LoadHighScore();
+            
+            _timer = new System.Timers.Timer();
+            _timer.Elapsed += OnTimerElapsed;
+            _timer.Interval = TickInterval;
+            _timer.AutoReset = true;
+            _timer.Stop(); 
             InitializeGame();
         }
 
@@ -44,13 +60,18 @@ namespace AsteriodGameMechanic.Model
             _isPaused = false;
             _gameTime = TimeSpan.Zero;
             
+            _isMovingLeft = false;
+            _isMovingRight = false;
+            
             ScoreChanged?.Invoke(this, EventArgs.Empty);
             GameTimeChanged?.Invoke(this, EventArgs.Empty);
         }
 
-        public void Update(TimeSpan elapsedTime)
+        public void PerformGameTick(TimeSpan elapsedTime)
         {
             if (_isPaused || _isGameOver) return;
+            if (_isMovingLeft) Spaceship.MoveLeft();
+            if (_isMovingRight) Spaceship.MoveRight();
             
             _gameTime += elapsedTime;
             GameTimeChanged?.Invoke(this, EventArgs.Empty);
@@ -106,10 +127,12 @@ namespace AsteriodGameMechanic.Model
                 if (CheckCollision(Spaceship, Asteroids[i]))
                 {
                     _isGameOver = true;
-                    
+                    _timer.Stop();
+
                     if (_score > HighScore)
                     {
                         HighScore = _score;
+                        _highScoreManager.SaveHighScore(_score);
                         HighScoreChanged?.Invoke(this, EventArgs.Empty);
                     }
                     
@@ -160,16 +183,19 @@ namespace AsteriodGameMechanic.Model
             //return false; //Only for testing high scores
         }
 
-        public void MoveSpaceshipLeft()
+        public void SetMovingLeft(bool isMoving)
         {
-            if (!_isPaused && !_isGameOver)
-                Spaceship.MoveLeft();
+            _isMovingLeft = isMoving;
         }
-
-        public void MoveSpaceshipRight()
+        public void SetMovingRight(bool isMoving)
         {
-            if (!_isPaused && !_isGameOver)
-                Spaceship.MoveRight();
+            _isMovingRight = isMoving;
+        }
+        public void Stop()
+        {
+            _timer.Stop(); 
+            
+            _timer.Dispose(); 
         }
 
         public void TogglePause()
@@ -177,19 +203,30 @@ namespace AsteriodGameMechanic.Model
             if (!_isGameOver)
             {
                 _isPaused = !_isPaused;
+                
+                if (_isPaused)
+                {
+                    _timer.Stop();
+                }
+                else
+                {
+                    _lastUpdateTime = DateTime.Now; 
+                    _timer.Start();
+                }
             }
         }
 
-        public void SetGameState(int score, TimeSpan gameTime, int spaceshipX, List<Asteroid> asteroids)
+        public void SetGameState(int score, TimeSpan gameTime, int spaceshipX, List<Asteroid> asteroids) //
         {
+            _timer.Stop();
+
             _score = score;
             _gameTime = gameTime;
             _isGameOver = false;
             _isPaused = true;
             
             Spaceship = new Spaceship(spaceshipX, ScreenHeight - 50, ScreenWidth);
-            Asteroids.Clear();
-            Asteroids.AddRange(asteroids);
+            Asteroids = asteroids;
             
             ScoreChanged?.Invoke(this, EventArgs.Empty);
             GameTimeChanged?.Invoke(this, EventArgs.Empty);
@@ -205,6 +242,22 @@ namespace AsteriodGameMechanic.Model
             if (difficulty < 2.0) return "Medium";
             if (difficulty < 2.5) return "Hard";
             return "Extreme";
+        }
+        public void StartGame()
+        {
+            InitializeGame();
+            _lastUpdateTime = DateTime.Now;
+            _timer.Start();
+        }
+        private void OnTimerElapsed(object sender, ElapsedEventArgs e)
+        {
+            if (_isPaused || _isGameOver) return;
+
+            DateTime currentTime = DateTime.Now;
+            TimeSpan elapsedTime = currentTime - _lastUpdateTime;
+            _lastUpdateTime = currentTime;
+ 
+            PerformGameTick(elapsedTime);
         }
     }
 }

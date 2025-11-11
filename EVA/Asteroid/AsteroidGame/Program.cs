@@ -1,5 +1,6 @@
 using System;
 using System.Windows.Forms;
+using AsteriodGameMechanic.Persistence;
 
 namespace AsteroidGame
 {
@@ -10,7 +11,10 @@ namespace AsteroidGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            IHighScoreManager highScoreManager = new HighScoreManager(appDirectory);
+            IGamePersistence persistence = new GamePersistence();
+            Application.Run(new Form1(persistence, highScoreManager));
         }
     }
 }

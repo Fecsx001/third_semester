@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Authors>Roxána Provender, Máté Cserép</Authors>
+		<Product>PingPongGame</Product>
+		<Company>ELTE, Faculty of Informatics</Company>
+		<Copyright>Copyright © Eötvös Loránd University (ELTE) 2023</Copyright>
+	</PropertyGroup>
+
+</Project>

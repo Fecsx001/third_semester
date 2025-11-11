@@ -6,82 +6,71 @@ namespace AsteroidGame
     public partial class Form1 : Form
     {
         private GameModel _gameModel;
-        private GamePersistence _persistence;
-        private readonly HighScoreManager _highScoreManager;
-        private System.Windows.Forms.Timer _gameTimer;
-        private DateTime _lastUpdateTime;
-        private bool _leftKeyPressed = false;
-        private bool _rightKeyPressed = false;
+        private readonly IGamePersistence _persistence;
+        private readonly IHighScoreManager _highScoreManager;
 
-        public Form1()
+        public Form1(IGamePersistence persistence, IHighScoreManager highScoreManager)
         {
             InitializeComponent();
+
+            _persistence = persistence;
+            _highScoreManager = highScoreManager;
             
-            string appDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            _highScoreManager = new HighScoreManager(appDirectory);
-            
-            int highScore = _highScoreManager.LoadHighScore();
-            
-            InitializeGame(highScore);
+            InitializeGame();
         }
 
-        private void InitializeGame(int highScore)
+        private void InitializeGame()
         {
-            _gameModel = new GameModel(ClientSize.Width, ClientSize.Height, highScore);
-            _persistence = new GamePersistence();
+            _gameModel?.Stop();
+            
+            _gameModel = new GameModel(ClientSize.Width, ClientSize.Height, _highScoreManager);
             
             _gameModel.GameOver += GameModel_GameOver;
             _gameModel.ScoreChanged += GameModel_ScoreChanged;
             _gameModel.GameTimeChanged += GameModel_GameTimeChanged;
-            _gameModel.HighScoreChanged += GameModel_HighScoreChanged;
-
-            _gameTimer = new System.Windows.Forms.Timer();
-            _gameTimer.Interval = 16; //If my calculations are correct, this should be about 60 FPS so normal for a game
-            _gameTimer.Tick += GameTimer_Tick;
-            _lastUpdateTime = DateTime.Now;
-            _gameTimer.Start();
+            
+            _gameModel.StartGame();
 
             DoubleBuffered = true;
             UpdateStatus();
         }
-
-        private void GameModel_HighScoreChanged(object sender, EventArgs e)
-        {
-            _highScoreManager.SaveHighScore(_gameModel.HighScore);
-            UpdateStatus();
-        }
-
-        private void GameTimer_Tick(object sender, EventArgs e)
-        {
-            DateTime currentTime = DateTime.Now;
-            TimeSpan elapsed = currentTime - _lastUpdateTime;
-            _lastUpdateTime = currentTime;
-
-            if (_leftKeyPressed) _gameModel.MoveSpaceshipLeft();
-            if (_rightKeyPressed) _gameModel.MoveSpaceshipRight();
-            
-            _gameModel.Update(elapsed);
-            Invalidate();
-        }
-
+        
         private void GameModel_ScoreChanged(object sender, EventArgs e)
         {
             UpdateStatus();
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() => Invalidate()));
+            }
+            else
+            {
+                Invalidate();
+            }
         }
 
         private void GameModel_GameTimeChanged(object sender, EventArgs e)
         {
             UpdateStatus();
+            if (InvokeRequired)
+            {
+                Invoke(new Action(() => Invalidate()));
+            }
+            else
+            {
+                Invalidate();
+            }
         }
 
         private void GameModel_GameOver(object sender, EventArgs e)
         {
-            _gameTimer.Stop();
-
-            if (_gameModel.Score > _gameModel.HighScore)
+            if (InvokeRequired)
             {
-                _gameModel.SetHighScore(_gameModel.Score);
+                Invoke(new Action(() => GameModel_GameOver(sender, e)));
+                return;
             }
+
+            // A pontszám ellenőrzése és mentése már a GameModel-ben megtörténik.
+            // A SetHighScore hívás itt már nem szükséges.
             
             UpdateStatus();
             Invalidate();
@@ -290,10 +279,10 @@ namespace AsteroidGame
             switch (e.KeyCode)
             {
                 case Keys.Left:
-                    _leftKeyPressed = true;
+                    _gameModel.SetMovingLeft(true);
                     break;
                 case Keys.Right:
-                    _rightKeyPressed = true;
+                    _gameModel.SetMovingRight(true);
                     break;
                 case Keys.Space:
                     if (_gameModel.IsGameOver)
@@ -320,25 +309,22 @@ namespace AsteroidGame
             switch (e.KeyCode)
             {
                 case Keys.Left:
-                    _leftKeyPressed = false;
+                    _gameModel.SetMovingLeft(false);
                     break;
                 case Keys.Right:
-                    _rightKeyPressed = false;
+                    _gameModel.SetMovingRight(false);
                     break;
             }
         }
 
         private void NewGame()
         {
-            int highScore = _highScoreManager.LoadHighScore();
-            _gameModel = new GameModel(ClientSize.Width, ClientSize.Height, highScore);
+            _gameModel?.Stop();
+            _gameModel = new GameModel(ClientSize.Width, ClientSize.Height, _highScoreManager);
             _gameModel.GameOver += GameModel_GameOver;
             _gameModel.ScoreChanged += GameModel_ScoreChanged;
             _gameModel.GameTimeChanged += GameModel_GameTimeChanged;
-            _gameModel.HighScoreChanged += GameModel_HighScoreChanged;
-            
-            _lastUpdateTime = DateTime.Now;
-            _gameTimer.Start();
+            _gameModel.StartGame();
             UpdateStatus();
             Invalidate();
         }
@@ -379,6 +365,7 @@ namespace AsteroidGame
 
         private void LoadGame()
         {
+            _gameModel?.Stop();
             using (var openDialog = new OpenFileDialog())
             {
                 openDialog.Filter = "Asteroid Game (*.save)|*.save";
@@ -404,13 +391,10 @@ namespace AsteroidGame
                             ));
                         }
                         
-                        int highScore = _highScoreManager.LoadHighScore();
-                        
-                        _gameModel = new GameModel(gameData.ScreenWidth, gameData.ScreenHeight, highScore);
+                        _gameModel = new GameModel(gameData.ScreenWidth, gameData.ScreenHeight, _highScoreManager);
                         _gameModel.GameOver += GameModel_GameOver;
                         _gameModel.ScoreChanged += GameModel_ScoreChanged;
                         _gameModel.GameTimeChanged += GameModel_GameTimeChanged;
-                        _gameModel.HighScoreChanged += GameModel_HighScoreChanged;
                         
                         _gameModel.SetGameState(
                             gameData.Score, 
@@ -541,10 +525,8 @@ namespace AsteroidGame
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            if (_gameModel.Score > _gameModel.HighScore)
-            {
-                _highScoreManager.SaveHighScore(_gameModel.Score);
-            }
+            _gameModel?.Stop();
+            // A mentési logika már a GameModel-ben van.
             base.OnFormClosing(e);
         }
     }

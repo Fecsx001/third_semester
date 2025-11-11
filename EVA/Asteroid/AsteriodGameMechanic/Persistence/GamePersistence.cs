@@ -2,7 +2,7 @@
 
 namespace AsteriodGameMechanic.Persistence
 {
-    public class GamePersistence
+    public class GamePersistence : IGamePersistence
     {
         public void SaveGame(string filePath, GameModel gameModel)
         {
@@ -18,13 +18,12 @@ namespace AsteriodGameMechanic.Persistence
 
             foreach (var asteroid in gameModel.Asteroids)
             {
-                int baseSize = (asteroid.Width + asteroid.Height) / 2;
                 gameData.Asteroids.Add(new AsteroidData
                 {
                     X = asteroid.X,
                     Y = asteroid.Y,
-                    BaseSize = baseSize,
-                    Speed = 5
+                    BaseSize = asteroid.BaseSize,
+                    Speed = asteroid.Speed
                 });
             }
 

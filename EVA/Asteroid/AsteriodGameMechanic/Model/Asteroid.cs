@@ -6,25 +6,25 @@
         public int Y { get; private set; }
         public int Width { get; private set; }
         public int Height { get; private set; }
-        private readonly int _speed;
-        private int _baseSize;
+        public int BaseSize { get; private set; }
+        public int Speed { get; private set; }
 
         public Asteroid(int x, int y, int screenHeight, int baseSize, int speed)
         {
             X = x;
             Y = y;
-            _baseSize = baseSize;
-            _speed = speed;
+            BaseSize = baseSize;
+            Speed = speed;
             
             Random rand = new Random();
-            int sizeVariation = (int)(_baseSize * (rand.NextDouble() * 0.4 - 0.2));
-            Width = _baseSize + sizeVariation;
-            Height = _baseSize + sizeVariation;
+            int sizeVariation = (int)(BaseSize * (rand.NextDouble() * 0.4 - 0.2));
+            Width = BaseSize + sizeVariation;
+            Height = BaseSize + sizeVariation;
         }
 
         public void Move()
         {
-            Y += _speed;
+            Y += Speed;
         }
     }
 }

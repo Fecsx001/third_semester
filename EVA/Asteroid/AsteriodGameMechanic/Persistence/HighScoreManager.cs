@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AsteriodGameMechanic.Persistence
 {
-    public class HighScoreManager
+    public class HighScoreManager : IHighScoreManager
     {
         private readonly string _saveDirectory;
         private readonly string _highScoreFile;
