@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteroidGame", "AsteroidGame\AsteroidGame.csproj", "{FE8FAA7F-745A-4F2B-A831-D4FCFCA8AB15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteroidGameMechanic", "AsteroidGameMechanic\AsteroidGameMechanic.csproj", "{B6659786-CFDB-4EA0-AD52-196A73FCC6B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsteroidGameTest", "AsteroidGameTest\AsteroidGameTest.csproj", "{EA105408-1D38-415B-B26C-9D13863A211E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE8FAA7F-745A-4F2B-A831-D4FCFCA8AB15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE8FAA7F-745A-4F2B-A831-D4FCFCA8AB15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE8FAA7F-745A-4F2B-A831-D4FCFCA8AB15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE8FAA7F-745A-4F2B-A831-D4FCFCA8AB15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6659786-CFDB-4EA0-AD52-196A73FCC6B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6659786-CFDB-4EA0-AD52-196A73FCC6B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6659786-CFDB-4EA0-AD52-196A73FCC6B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6659786-CFDB-4EA0-AD52-196A73FCC6B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA105408-1D38-415B-B26C-9D13863A211E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA105408-1D38-415B-B26C-9D13863A211E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA105408-1D38-415B-B26C-9D13863A211E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA105408-1D38-415B-B26C-9D13863A211E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

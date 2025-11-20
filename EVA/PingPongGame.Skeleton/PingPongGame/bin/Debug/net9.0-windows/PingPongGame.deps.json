@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PingPongGame/1.0.0": {
+        "dependencies": {
+          "PingPongGame.Model": "1.0.0"
+        },
+        "runtime": {
+          "PingPongGame.dll": {}
+        }
+      },
+      "PingPongGame.Model/1.0.0": {
+        "runtime": {
+          "PingPongGame.Model.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PingPongGame/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PingPongGame.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

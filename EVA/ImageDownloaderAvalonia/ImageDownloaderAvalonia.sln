@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDownloaderAvalonia", "ImageDownloaderAvalonia\ImageDownloaderAvalonia.csproj", "{ECC0630A-C2DC-4654-B78D-4E858291C575}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDownloaderAvalonia.Model", "ImageDownloaderAvalonia.Model\ImageDownloaderAvalonia.Model.csproj", "{263BA980-54CD-493C-817E-4987532D2C05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ECC0630A-C2DC-4654-B78D-4E858291C575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC0630A-C2DC-4654-B78D-4E858291C575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC0630A-C2DC-4654-B78D-4E858291C575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC0630A-C2DC-4654-B78D-4E858291C575}.Release|Any CPU.Build.0 = Release|Any CPU
+		{263BA980-54CD-493C-817E-4987532D2C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{263BA980-54CD-493C-817E-4987532D2C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{263BA980-54CD-493C-817E-4987532D2C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{263BA980-54CD-493C-817E-4987532D2C05}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

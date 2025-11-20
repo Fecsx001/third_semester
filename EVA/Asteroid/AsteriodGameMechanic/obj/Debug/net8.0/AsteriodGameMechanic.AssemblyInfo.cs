@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AsteriodGameMechanic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce8b47e5b0ca99f78c6ff75a46aa0d3e17ad4648")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+065822ef57527c1f4f356b6f3fd8a97849f1b80a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AsteriodGameMechanic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AsteriodGameMechanic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,13 @@
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\bin\Debug\net9.0\ImageDownloaderAvalonia.Model.deps.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\bin\Debug\net9.0\ImageDownloaderAvalonia.Model.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\bin\Debug\net9.0\ImageDownloaderAvalonia.Model.pdb
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.csproj.AssemblyReference.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.AssemblyInfoInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.AssemblyInfo.cs
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.csproj.CoreCompileInputs.cache
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.sourcelink.json
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\refint\ImageDownloaderAvalonia.Model.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ImageDownloaderAvalonia.Model.pdb
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia.Model\obj\Debug\net9.0\ref\ImageDownloaderAvalonia.Model.dll

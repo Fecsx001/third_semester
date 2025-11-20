@@ -1,0 +1,267 @@
+classDiagram
+    direction TB
+
+    %% --- INTERFACES ---
+    class IValueConverter {
+        <<Interface>>
+        +Convert(value, targetType, parameter, culture)
+        +ConvertBack(value, targetType, parameter, culture)
+    }
+    class INotifyPropertyChanged {
+        <<Interface>>
+        +PropertyChanged : event
+    }
+    class ICommand {
+        <<Interface>>
+        +CanExecute(parameter) : bool
+        +Execute(parameter)
+        +CanExecuteChanged : event
+    }
+    class IDialogService {
+        <<Interface>>
+        +ShowMessage(message, title)
+        +ShowConfirmation(message, title) : bool
+        +ShowSaveDialog(filter, defaultExt, initialDirectory) : string
+        +ShowOpenDialog(filter, defaultExt, initialDirectory) : string
+    }
+    class IGamePersistence {
+        <<Interface>>
+        +SaveGame(filePath, gameModel)
+        +LoadGame(filePath) : GameData
+    }
+    class IHighScoreManager {
+        <<Interface>>
+        +LoadHighScore() : int
+        +SaveHighScore(score)
+        +GetSaveDirectory() : string
+    }
+
+    %% --- VIEW (AsteroidGame & AsteroidGame.View) ---
+    class App {
+        -MainWindow _window
+        -GameViewModel _viewModel
+        +App()
+        -Application_Startup(sender, e)
+        -OnGameOver(sender, e)
+        -OnGameLoaded(sender, e)
+    }
+    App --o MainWindow : _window
+    App --o GameViewModel : _viewModel
+
+    class MainWindow {
+        +MainWindow()
+        -MainWindow_Loaded(sender, e)
+    }
+    
+    class WpfDialogService {
+        +ShowMessage(message, title)
+        +ShowConfirmation(message, title) : bool
+        +ShowSaveDialog(filter, defaultExt, initialDirectory) : string
+        +ShowOpenDialog(filter, defaultExt, initialDirectory) : string
+    }
+    WpfDialogService ..|> IDialogService : implements
+
+    class HeightConverter {
+        +Offset : double
+        +Convert(value, targetType, parameter, culture)
+        +ConvertBack(value, targetType, parameter, culture)
+    }
+    HeightConverter ..|> IValueConverter : implements
+
+    class AsteroidFillConverter {
+        +Convert(value, targetType, parameter, culture)
+        +ConvertBack(value, targetType, parameter, culture)
+    }
+    AsteroidFillConverter ..|> IValueConverter : implements
+    AsteroidFillConverter ..> Asteroid : uses
+
+    class AsteroidStrokeConverter {
+        +Convert(value, targetType, parameter, culture)
+        +ConvertBack(value, targetType, parameter, culture)
+    }
+    AsteroidStrokeConverter ..|> IValueConverter : implements
+    AsteroidStrokeConverter ..> Asteroid : uses
+
+    class CraterSizeConverter {
+        +Convert(value, targetType, parameter, culture)
+        +ConvertBack(value, targetType, parameter, culture)
+    }
+    CraterSizeConverter ..|> IValueConverter : implements
+
+    class CraterVisibilityConverter {
+        +Convert(value, targetType, parameter, culture)
+        +ConvertBack(value, targetType, parameter, culture)
+    }
+    CraterVisibilityConverter ..|> IValueConverter : implements
+    CraterVisibilityConverter ..> Asteroid : uses
+
+    %% --- VIEWMODEL (AsteroidGame.ViewModel) ---
+    class ViewModelBase {
+        +PropertyChanged : event
+        +ViewModelBase()
+        #OnPropertyChanged(propertyName)
+    }
+    ViewModelBase ..|> INotifyPropertyChanged : implements
+    
+    class DelegateCommand {
+        -readonly _execute : Action
+        -readonly _canExecute : Predicate
+        +CanExecuteChanged : event
+        +DelegateCommand(execute, canExecute)
+        +CanExecute(parameter) : bool
+        +Execute(parameter)
+        +RaiseCanExecuteChanged()
+    }
+    DelegateCommand ..|> ICommand : implements
+
+    class GameViewModel {
+        -GameModel _gameModel
+        -readonly IGamePersistence _persistence
+        -readonly IHighScoreManager _highScoreManager
+        -readonly IDialogService _dialogService
+        -Thickness _spaceshipPosition
+        +Asteroids : ObservableCollection~Asteroid~
+        +SpaceshipPosition : Thickness
+        +Spaceship : Spaceship
+        +Score : int
+        +GameTime : TimeSpan
+        +HighScore : int
+        +IsGameOver : bool
+        +IsPaused : bool
+        +NewGameCommand : ICommand
+        +TogglePauseCommand : ICommand
+        +SaveGameCommand : ICommand
+        +LoadGameCommand : ICommand
+        +ResetHighScoreCommand : ICommand
+        +ExitCommand : ICommand
+        +ShowControlsCommand : ICommand
+        +ShowAboutCommand : ICommand
+        +GameOver : event
+        +GameLoaded : event
+        +GameViewModel(persistence, highScoreManager, dialogService)
+        +SetSize(width, height)
+        +StartNewGame()
+        +TogglePause()
+        +SetMovingLeft(isMoving)
+        +SetMovingRight(isMoving)
+        +StopGame()
+        -UpdateSpaceshipPosition()
+        -OnModelUpdate(sender, e)
+        -OnGameOver(sender, e)
+        -ExecuteNewGame()
+        -ExecuteTogglePause()
+        -ExecuteSaveGame()
+        -ExecuteLoadGame()
+        -ExecuteResetHighScore()
+    }
+    GameViewModel --|> ViewModelBase
+    GameViewModel --o GameModel : _gameModel
+    GameViewModel ..> IGamePersistence : uses
+    GameViewModel ..> IHighScoreManager : uses
+    GameViewModel ..> IDialogService : uses
+    GameViewModel ..> DelegateCommand : uses
+    GameViewModel ..> Asteroid : uses
+    GameViewModel ..> Spaceship : uses
+
+
+    %% --- MODEL (AsteroidGameMechanic.Model) ---
+    class GameModel {
+        -readonly IHighScoreManager _highScoreManager
+        -readonly IGamePersistence _gamePersistence
+        -readonly Random _random
+        -int _score
+        -bool _isGameOver
+        -bool _isPaused
+        -TimeSpan _gameTime
+        -System.Timers.Timer _timer
+        -bool _isMovingLeft
+        -bool _isMovingRight
+        +Spaceship Spaceship
+        +List~Asteroid~ Asteroids
+        +Score : int
+        +IsGameOver : bool
+        +IsPaused : bool
+        +GameTime : TimeSpan
+        +HighScore : int
+        +GameOver : event
+        +ScoreChanged : event
+        +GameTimeChanged : event
+        +HighScoreChanged : event
+        +GameModel(screenWidth, screenHeight, highScoreManager, gamePersistence)
+        +PerformGameTick(elapsedTime)
+        +SetHighScore(highScore)
+        +SetMovingLeft(isMoving)
+        +SetMovingRight(isMoving)
+        +Stop()
+        +TogglePause()
+        +SetGameState(score, gameTime, spaceshipX, asteroids)
+        +GetDifficultyDescription() : string
+        +StartGame()
+        -InitializeGame()
+        -CheckCollision(spaceship, asteroid) : bool
+    }
+    GameModel --* Spaceship : Spaceship
+    GameModel --* "0..*" Asteroid : Asteroids
+    GameModel ..> IHighScoreManager : uses
+    GameModel ..> IGamePersistence : uses
+
+    class Spaceship {
+        -readonly int _screenWidth
+        -readonly int _speed
+        +X : int
+        +Y : int
+        +Width : int
+        +Height : int
+        +Spaceship(x, y, screenWidth)
+        +MoveLeft()
+        +MoveRight()
+    }
+
+    class Asteroid {
+        +X : int
+        +Y : int
+        +Width : int
+        +Height : int
+        +BaseSize : int
+        +Speed : int
+        +Asteroid(x, y, screenHeight, baseSize, speed)
+        +Move()
+    }
+
+
+    %% --- PERSISTENCE (AsteroidGameMechanic.Persistance) ---
+    class GamePersistence {
+        +SaveGame(filePath, gameModel)
+        +LoadGame(filePath) : GameData
+    }
+    GamePersistence ..|> IGamePersistence : implements
+    GamePersistence ..> GameModel : uses
+    GamePersistence ..> GameData : uses
+    GamePersistence ..> AsteroidData : uses
+
+    class HighScoreManager {
+        -readonly string _saveDirectory
+        -readonly string _highScoreFile
+        +HighScoreManager(gameRootPath)
+        +LoadHighScore() : int
+        +SaveHighScore(score)
+        +GetSaveDirectory() : string
+    }
+    HighScoreManager ..|> IHighScoreManager : implements
+
+    class GameData {
+        +Score : int
+        +GameTime : TimeSpan
+        +SpaceshipX : int
+        +List~AsteroidData~ Asteroids
+        +ScreenWidth : int
+        +ScreenHeight : int
+    }
+    GameData --o "0..*" AsteroidData : Asteroids
+    
+    class AsteroidData {
+        +X : int
+        +Y : int
+        +BaseSize : int
+        +Speed : int
+    }

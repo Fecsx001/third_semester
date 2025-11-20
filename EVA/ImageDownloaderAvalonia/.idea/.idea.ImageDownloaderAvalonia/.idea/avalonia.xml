@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="ImageDownloaderAvalonia/Views/MainView.axaml" value="ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" />
+        <entry key="ImageDownloaderAvalonia/Views/MainWindow.axaml" value="ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

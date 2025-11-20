@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xnd51i6odGo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia\\11.3.8\\avalonia.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.25547.20250602\\avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.buildservices\\11.3.1\\avalonia.buildservices.11.3.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.controls.colorpicker\\11.3.8\\avalonia.controls.colorpicker.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.desktop\\11.3.8\\avalonia.desktop.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.diagnostics\\11.3.8\\avalonia.diagnostics.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.fonts.inter\\11.3.8\\avalonia.fonts.inter.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.freedesktop\\11.3.8\\avalonia.freedesktop.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.native\\11.3.8\\avalonia.native.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.remote.protocol\\11.3.8\\avalonia.remote.protocol.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.skia\\11.3.8\\avalonia.skia.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.themes.fluent\\11.3.8\\avalonia.themes.fluent.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.themes.simple\\11.3.8\\avalonia.themes.simple.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.win32\\11.3.8\\avalonia.win32.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\avalonia.x11\\11.3.8\\avalonia.x11.11.3.8.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\dialoghost.avalonia\\0.8.1\\dialoghost.avalonia.0.8.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\harfbuzzsharp\\8.3.1.1\\harfbuzzsharp.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\8.3.1.1\\harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\8.3.1.1\\harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\harfbuzzsharp.nativeassets.webassembly\\8.3.1.1\\harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.1.1\\harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\messagebox.avalonia\\3.3.0\\messagebox.avalonia.3.3.0.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp.nativeassets.webassembly\\2.88.9\\skiasharp.nativeassets.webassembly.2.88.9.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

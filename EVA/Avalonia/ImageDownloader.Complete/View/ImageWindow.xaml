@@ -1,0 +1,15 @@
+﻿<Window x:Class="ELTE.ImageDownloader.View.ImageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ELTE.ImageDownloader.View"
+        mc:Ignorable="d"
+        Title="View image" Height="400" Width="600">
+    <DockPanel>
+        <Button Content="Letöltés"
+                Command="{Binding SaveImageCommand}"
+                DockPanel.Dock="Bottom" />
+        <Image Source="{Binding Image}" />
+    </DockPanel>
+</Window>

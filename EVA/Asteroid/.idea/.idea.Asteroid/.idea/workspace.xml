@@ -1,7 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
-  <component name="RunManager" selected=".NET Project.AsteriodGameMechanic">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8407d633-98da-41c4-9aed-5d0ef1c3aace" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame.Model/Asteroid.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame.Model/GameModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame.Model/Spaceship.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame.Persistance/AsteroidData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame.Persistance/GameData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame.Persistance/GamePersistance.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/View/AsteroidVisualConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/View/HeightConverter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/View/WpfDialogService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/ViewModel/DelegateCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/ViewModel/GameViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/ViewModel/IDialogService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/ViewModel/ViewModelBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/TestAsteroidGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/TestPersistance.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PingPongGame.Skeleton/.idea/.idea.PingPongGame/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PingPongGame.Skeleton/.idea/.idea.PingPongGame/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PingPongGame.Skeleton/.idea/.idea.PingPongGame/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PingPongGame.Skeleton/.idea/.idea.PingPongGame/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Asteroid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Asteroid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AsteriodGameMechanic/obj/Debug/net8.0/AsteriodGameMechanic.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PingPongGame.Skeleton/.idea/.idea.PingPongGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PingPongGame.Skeleton/.idea/.idea.PingPongGame/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fecsx001&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Fecsx001/third_semester.git&quot;,
+    &quot;accountId&quot;: &quot;6dbbe68a-6c59-4a9f-af84-9c631d501529&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="35LDcJZjv4AOLLIDdggmwBgNBbK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.AsteroidGame.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected=".NET Project.AsteroidGame">
     <configuration name="AsteriodGameMechanic" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -49,4 +128,22 @@
       </method>
     </configuration>
   </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8407d633-98da-41c4-9aed-5d0ef1c3aace" name="Changes" comment="" />
+      <created>1762880539193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762880539193</updated>
+      <workItem from="1762880541095" duration="197000" />
+      <workItem from="1762881200016" duration="495000" />
+      <workItem from="1762881821903" duration="2272000" />
+      <workItem from="1763117992658" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
 </project>
