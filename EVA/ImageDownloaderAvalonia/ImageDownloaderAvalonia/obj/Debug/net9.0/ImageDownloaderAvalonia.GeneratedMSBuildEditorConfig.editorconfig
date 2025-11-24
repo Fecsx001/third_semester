@@ -24,6 +24,12 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/Fecsx/RiderProjects/third_semester/EVA/ImageDownloaderAvalonia/ImageDownloaderAvalonia/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/Fecsx/RiderProjects/third_semester/EVA/ImageDownloaderAvalonia/ImageDownloaderAvalonia/Views/ImageView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Fecsx/RiderProjects/third_semester/EVA/ImageDownloaderAvalonia/ImageDownloaderAvalonia/Views/ImageWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/Fecsx/RiderProjects/third_semester/EVA/ImageDownloaderAvalonia/ImageDownloaderAvalonia/Views/MainView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

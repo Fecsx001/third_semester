@@ -42,8 +42,8 @@ namespace ImageDownloaderAvalonia.ViewModels
 
         public ObservableCollection<Bitmap> Images { get; set; }
 
-        public DelegateCommand DownloadCommand { get; set; }
-        public DelegateCommand ImageSelectedCommand { get; set; }
+        public DelegateCommand DownloadCommand { get; }
+        public DelegateCommand ImageSelectedCommand { get; }
 
         public event EventHandler<Bitmap>? ImageSelected;
         public event EventHandler<string>? ErrorOccurred;
@@ -52,11 +52,11 @@ namespace ImageDownloaderAvalonia.ViewModels
         {
             Images = new ObservableCollection<Bitmap>();
 
-            DownloadCommand = new DelegateCommand(async param =>
+            DownloadCommand = new DelegateCommand(param =>
             {
                 if (!_isDownloading)
                 {
-                    await LoadAsync(new Uri(param?.ToString() ?? string.Empty));
+                    _ = LoadAsync(new Uri(param?.ToString() ?? string.Empty));
                 }
                 else
                 {
@@ -99,7 +99,7 @@ namespace ImageDownloaderAvalonia.ViewModels
             _isDownloading = false;
         }
 
-        private static readonly string[] SupportedExtensions = [ ".jpg", ".jpeg", ".png", ".gif" ];
+        private static readonly string[] SupportedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
         private void OnImageLoaded(object? sender, WebImage e)
         {
             

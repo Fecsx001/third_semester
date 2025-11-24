@@ -1,10 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3041157a-d724-407c-9340-330f1732f6c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageView.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageView.axaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageWindow.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/.idea/.idea.AsteroidGame/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/AsteroidGame.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/AsteroidGame.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/AsteroidGame.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/App.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/AsteroidGame_MarkupCompile.lref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/GeneratedInternalTypeHelper.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/Debug/net8.0-windows/MainWindow.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGame/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/AsteroidGameMechanic.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/AsteroidGameMechanic.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/AsteroidGameMechanic.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/Debug/net8.0/AsteroidGameMechanic.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/Debug/net8.0/AsteroidGameMechanic.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/Debug/net8.0/AsteroidGameMechanic.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/Debug/net8.0/AsteroidGameMechanic.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/Debug/net8.0/AsteroidGameMechanic.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameMechanic/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/bin/Debug/net8.0/.msCoverageSourceRootsMapping_AsteroidGameTest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/AsteroidGameTest.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/AsteroidGameTest.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/AsteroidGameTest.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/Debug/net8.0/AsteroidGameTest.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AsteroidGame/AsteroidGameTest/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImageDownloader/.idea/.idea.ImageDownloader/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ImageDownloader/.idea/.idea.ImageDownloader/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ImageDownloaderAvalonia/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImageDownloaderAvalonia/.idea/avalonia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ImageDownloaderAvalonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImageDownloaderAvalonia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ImageDownloaderAvalonia.Model.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ref/ImageDownloaderAvalonia.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/ref/ImageDownloaderAvalonia.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/refint/ImageDownloaderAvalonia.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/Debug/net9.0/refint/ImageDownloaderAvalonia.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia.Model/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/App.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/App.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/App.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/ViewModels/ImageViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/ViewModels/ImageViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/ViewModels/MainViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/ViewModels/MainViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/Views/MainView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/Views/MainView.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.Model.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/bin/Debug/net9.0/ImageDownloaderAvalonia.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/Avalonia/Resources.Inputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/Avalonia/references" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/Avalonia/references" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/Avalonia/resources" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/Avalonia/resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ImageDownloaderAvalonia.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ref/ImageDownloaderAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/ref/ImageDownloaderAvalonia.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/refint/ImageDownloaderAvalonia.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/Debug/net9.0/refint/ImageDownloaderAvalonia.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/ImageDownloaderAvalonia.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/ImageDownloaderAvalonia.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/ImageDownloaderAvalonia.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/ImageDownloaderAvalonia.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ImageDownloaderAvalonia/obj/rider.project.restore.info" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Fecsx001&quot;
   }
 }</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Fecsx001/third_semester.git&quot;,
+    &quot;accountId&quot;: &quot;6dbbe68a-6c59-4a9f-af84-9c631d501529&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageView.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageView.axaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageWindow.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ImageDownloaderAvalonia/Views/ImageWindow.axaml.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="35vkUt4Wzs2cTyJfdAas2RIg3rO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.ImageDownloaderAvalonia.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="ImageDownloaderAvalonia" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -29,5 +193,30 @@
         <option name="Build" />
       </method>
     </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3041157a-d724-407c-9340-330f1732f6c6" name="Changes" comment="" />
+      <created>1763997951466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1763997951466</updated>
+      <workItem from="1763997952592" duration="109000" />
+      <workItem from="1763998150325" duration="301000" />
+      <workItem from="1763998601744" duration="3496000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

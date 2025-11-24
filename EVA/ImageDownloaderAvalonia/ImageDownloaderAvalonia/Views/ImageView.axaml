@@ -1,0 +1,14 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:ImageDownloaderAvalonia.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="450"
+             x:Class="ImageDownloaderAvalonia.Views.ImageView"
+             x:DataType="local:ImageViewModel">
+    <DockPanel>
+        <Image Source="{Binding Image}"  />
+        <Button Content="Letöltés" HorizontalAlignment="Stretch" VerticalAlignment="Center" Command="{Binding SaveImageCommand}" DockPanel.Dock="Bottom"></Button>
+        <Button Content="Bezárás" Command="{Binding CloseCommand}" IsVisible="{OnPlatform Android=True, Default=False}" DockPanel.Dock="Bottom" />
+    </DockPanel>
+</UserControl>

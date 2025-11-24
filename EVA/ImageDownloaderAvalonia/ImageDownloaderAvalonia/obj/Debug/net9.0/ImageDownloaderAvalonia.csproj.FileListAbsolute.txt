@@ -78,3 +78,4 @@ C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDow
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia\obj\Debug\net9.0\ImageDownloaderAvalonia.pdb
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia\obj\Debug\net9.0\ImageDownloaderAvalonia.genruntimeconfig.cache
 C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia\obj\Debug\net9.0\ref\ImageDownloaderAvalonia.dll
+C:\Users\Fecsx\RiderProjects\third_semester\EVA\ImageDownloaderAvalonia\ImageDownloaderAvalonia\bin\Debug\net9.0\SixLabors.ImageSharp.dll

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ImageDownloaderAvalonia")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+065822ef57527c1f4f356b6f3fd8a97849f1b80a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35db74ebc8e719edc6c0b072851e6f64d24dc161")]
 [assembly: System.Reflection.AssemblyProductAttribute("ImageDownloaderAvalonia")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ImageDownloaderAvalonia")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

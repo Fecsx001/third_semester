@@ -12,7 +12,7 @@
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <DockPanel x:Name="Panel">
+  <DockPanel>
     <TextBox x:Name="UrlTextBox" Text="https://www.inf.elte.hu/" DockPanel.Dock="Top" />
     <Button Content="{Binding DownloadButtonLabel}"
             DockPanel.Dock="Top" HorizontalAlignment="Stretch" HorizontalContentAlignment="Center"
@@ -37,9 +37,13 @@
         </ItemsControl.ItemsPanel>
         <ItemsControl.ItemTemplate>
           <DataTemplate>
-            <Image Stretch="Fill" Source="{Binding}"
-                   Width="100" Height="100"
-                   Margin="5" />
+            <Button
+                Width="100" Height="100"
+                Margin="5"
+                Command="{Binding DataContext.ImageSelectedCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                CommandParameter="{Binding}">
+              <Image Stretch="Fill" Source="{Binding}" />
+            </Button>
           </DataTemplate>
         </ItemsControl.ItemTemplate>
       </ItemsControl>

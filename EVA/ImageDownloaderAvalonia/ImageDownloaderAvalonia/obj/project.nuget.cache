@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Xnd51i6odGo=",
+  "dgSpecHash": "DBm99GaWqp0=",
   "success": true,
   "projectFilePath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,7 @@
     "C:\\Users\\Fecsx\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512",
     "C:\\Users\\Fecsx\\.nuget\\packages\\messagebox.avalonia\\3.3.0\\messagebox.avalonia.3.3.0.nupkg.sha512",
     "C:\\Users\\Fecsx\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\Fecsx\\.nuget\\packages\\sixlabors.imagesharp\\3.1.12\\sixlabors.imagesharp.3.1.12.nupkg.sha512",
     "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
     "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
     "C:\\Users\\Fecsx\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
@@ -37,15 +38,5 @@
     "C:\\Users\\Fecsx\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\Fecsx\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1900",
-      "level": "Warning",
-      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
-      "projectPath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\Fecsx\\RiderProjects\\third_semester\\EVA\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia\\ImageDownloaderAvalonia.csproj",
-      "targetGraphs": []
-    }
-  ]
+  "logs": []
 }

@@ -3,6 +3,9 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="ImageDownloaderAvalonia/App.axaml" value="ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" />
+        <entry key="ImageDownloaderAvalonia/Views/ImageView.axaml" value="ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" />
+        <entry key="ImageDownloaderAvalonia/Views/ImageVindow.axaml" value="ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" />
         <entry key="ImageDownloaderAvalonia/Views/MainView.axaml" value="ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" />
         <entry key="ImageDownloaderAvalonia/Views/MainWindow.axaml" value="ImageDownloaderAvalonia/ImageDownloaderAvalonia.csproj" />
       </map>
