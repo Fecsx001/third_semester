@@ -40,7 +40,7 @@
             <Button
                 Width="100" Height="100"
                 Margin="5"
-                Command="{Binding DataContext.ImageSelectedCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                Command="{Binding $parent[UserControl].DataContext.ImageSelectedCommand}"
                 CommandParameter="{Binding}">
               <Image Stretch="Fill" Source="{Binding}" />
             </Button>

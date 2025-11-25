@@ -11,7 +11,6 @@ namespace AsteroidGameAvalonia.Persistance
         {
             if (string.IsNullOrEmpty(filePath)) throw new ArgumentException("filePath is null or empty", nameof(filePath));
 
-            // Use async file write to avoid blocking the UI thread
             using (var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None, 4096, useAsync: true))
             using (var writer = new StreamWriter(stream))
             {
@@ -37,7 +36,6 @@ namespace AsteroidGameAvalonia.Persistance
             if (string.IsNullOrEmpty(filePath)) throw new ArgumentException("filePath is null or empty", nameof(filePath));
             if (!File.Exists(filePath)) throw new FileNotFoundException("Save file not found.", filePath);
 
-            // Read all lines asynchronously then parse on background thread to avoid UI blocking
             string[] lines;
             using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, useAsync: true))
             using (var reader = new StreamReader(stream))
