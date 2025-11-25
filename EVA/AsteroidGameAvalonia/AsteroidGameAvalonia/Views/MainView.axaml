@@ -2,15 +2,127 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:vm="using:AsteroidGameAvalonia.ViewModels"
+             xmlns:model="clr-namespace:AsteroidGameAvalonia.Model;assembly=AsteroidGameAvalonia.Model"
+             xmlns:vm="clr-namespace:AsteroidGameAvalonia.ViewModels;assembly=AsteroidGameAvalonia.Model"
+             xmlns:local="clr-namespace:AsteroidGameAvalonia.Views"
+             xmlns:viewModels="clr-namespace:AsteroidGameAvalonia.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AsteroidGameAvalonia.Views.MainView"
-             x:DataType="vm:MainViewModel">
-  <Design.DataContext>
-    <!-- This only sets the DataContext for the previewer in an IDE,
-         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
-  </Design.DataContext>
+             x:DataType="viewModels:MainViewModel"
+             Focusable="True">
 
-  <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <UserControl.Resources>
+        <local:AsteroidFillConverter x:Key="AsteroidFillConverter"/>
+        <local:AsteroidStrokeConverter x:Key="AsteroidStrokeConverter"/>
+        <local:CraterSizeConverter x:Key="CraterSizeConverter"/>
+    </UserControl.Resources>
+
+    <Grid RowDefinitions="Auto, *, Auto">
+        <Menu Grid.Row="0">
+            <MenuItem Header="_Game">
+                <MenuItem Header="_New Game" Command="{Binding NewGameCommand}"/>
+                <MenuItem Header="_Pause/Resume" Command="{Binding TogglePauseCommand}"/>
+                <Separator/>
+                <MenuItem Header="_Save Game" Command="{Binding SaveGameCommand}"/>
+                <MenuItem Header="_Load Game" Command="{Binding LoadGameCommand}"/>
+                <Separator/>
+                <MenuItem Header="_Reset High Score" Command="{Binding ResetHighScoreCommand}"/>
+                <Separator/>
+                <MenuItem Header="Exit" Command="{Binding ExitCommand}"/>
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_Controls" Command="{Binding ShowControlsCommand}"/>
+                <MenuItem Header="_About" Command="{Binding ShowAboutCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <Grid Grid.Row="1" Background="Black" ClipToBounds="True" x:Name="GameArea">
+            <ItemsControl ItemsSource="{Binding Asteroids}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <Canvas/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    
+                    <DataTemplate DataType="model:Asteroid">
+                        <Grid x:DataType="model:Asteroid" Width="{Binding Width}" Height="{Binding Height}">
+                            <Ellipse Fill="{Binding Converter={StaticResource AsteroidFillConverter}}"
+                                     Stroke="{Binding Converter={StaticResource AsteroidStrokeConverter}}"
+                                     StrokeThickness="1"/>
+                            <Ellipse Fill="DarkSlateGray"
+                                     Width="{Binding Width, Converter={StaticResource CraterSizeConverter}, ConverterParameter=0.2}"
+                                     Height="{Binding Width, Converter={StaticResource CraterSizeConverter}, ConverterParameter=0.2}"
+                                     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,8,0,0"/>
+                             <Ellipse Fill="DarkSlateGray"
+                                     Width="{Binding Width, Converter={StaticResource CraterSizeConverter}, ConverterParameter=0.15}"
+                                     Height="{Binding Width, Converter={StaticResource CraterSizeConverter}, ConverterParameter=0.15}"
+                                     HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,5"/>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+                <ItemsControl.Styles>
+                    <Style Selector="ContentPresenter" x:DataType="model:Asteroid">
+                        <Setter Property="Canvas.Left" Value="{Binding X}"/>
+                        <Setter Property="Canvas.Top" Value="{Binding Y}"/>
+                    </Style>
+                </ItemsControl.Styles>
+            </ItemsControl>
+
+            <Grid Margin="{Binding SpaceshipPosition}"
+                  Width="{Binding Spaceship.Width}"
+                  Height="{Binding Spaceship.Height}"
+                  HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Rectangle Fill="LightBlue" Stroke="White" StrokeThickness="1"/>
+                <Rectangle Fill="Blue" Stroke="White" StrokeThickness="1"
+                           Width="30" Height="10" 
+                           HorizontalAlignment="Center" VerticalAlignment="Top" 
+                           Margin="0,-10,0,0"/>
+                <Polygon Fill="Orange"
+                         Width="30" Height="10"
+                         HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                         Margin="0,0,0,-10"
+                         Stretch="Fill"
+                         Points="5,0 25,0 30,10 0,10" />
+            </Grid>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" IsVisible="{Binding IsPaused}">
+                <TextBlock Text="PAUSED" FontSize="48" FontWeight="Bold" Foreground="Yellow" HorizontalAlignment="Center" />
+                <TextBlock Text="Press SPACE or Resume" FontSize="20" Foreground="White" HorizontalAlignment="Center"/> 
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" IsVisible="{Binding IsGameOver}">
+                <TextBlock Text="GAME OVER" FontSize="48" FontWeight="Bold" Foreground="Red"/>
+                <TextBlock Text="Press SPACE or New Game" FontSize="20" Foreground="Yellow" TextAlignment="Center"/>
+            </StackPanel>
+            
+            <Grid VerticalAlignment="Bottom" Margin="20" Height="80">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80"/>
+                </Grid.ColumnDefinitions>
+                <RepeatButton Grid.Column="0" Content="←" FontSize="30" Background="#50FFFFFF" PointerPressed="OnLeftPressed" PointerReleased="OnLeftReleased" IsVisible="{OnPlatform Android=True, Default=False}" />
+                <Button Grid.Column="1" Content="FIRE / PAUSE" FontSize="20" Background="#30FFFFFF" HorizontalAlignment="Center" Command="{Binding TogglePauseCommand}" IsVisible="{OnPlatform Android=True, Default=False }"/>
+                <RepeatButton Grid.Column="2" Content="→" FontSize="30" Background="#50FFFFFF" PointerPressed="OnRightPressed" PointerReleased="OnRightReleased" IsVisible="{OnPlatform Android=True, Default=False}"/>
+            </Grid>
+            
+            <Grid x:Name="MessageOverlay" IsVisible="False" Background="#AA000000">
+                <Border Background="#333" BorderBrush="White" BorderThickness="2" CornerRadius="5" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20">
+                    <StackPanel>
+                        <TextBlock x:Name="MessageTitle" Text="Title" FontWeight="Bold" Foreground="White" Margin="0,0,0,10"/>
+                        <TextBlock x:Name="MessageText" Text="Message content" Foreground="White" Margin="0,0,0,20"/>
+                        <Button Content="OK" HorizontalAlignment="Right" Click="CloseMessageOverlay"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="2" ColumnDefinitions="Auto, Auto, Auto, *, Auto" Background="#333">
+            <TextBlock Grid.Column="0" Text="{Binding GameTime, StringFormat='Time: {0:mm\\:ss}'}" Foreground="White" Margin="5"/>
+            <TextBlock Grid.Column="1" Text="{Binding Score, StringFormat=' | Score: {0}'}" Foreground="White" Margin="5"/>
+            <TextBlock Grid.Column="2" Text="{Binding HighScore, StringFormat=' | High Score: {0}'}" Foreground="Red" Margin="5"/>
+            <TextBlock Grid.Column="4" Text="{Binding Difficulty, StringFormat='Difficulty: {0} '}" Foreground="White" Margin="5"/>
+        </Grid>
+    </Grid>
 </UserControl>

@@ -1,0 +1,131 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGame/AsteroidGame.csproj": {}
+  },
+  "projects": {
+    "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGame/AsteroidGame.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGame/AsteroidGame.csproj",
+        "projectName": "AsteroidGame",
+        "projectPath": "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGame/AsteroidGame.csproj",
+        "packagesPath": "/home/fecsx/.nuget/packages/",
+        "outputPath": "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGame/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/fecsx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {
+              "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGameMechanic/AsteroidGameMechanic.csproj": {
+                "projectPath": "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGameMechanic/AsteroidGameMechanic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/fecsx/.dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGameMechanic/AsteroidGameMechanic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGameMechanic/AsteroidGameMechanic.csproj",
+        "projectName": "AsteroidGameMechanic",
+        "projectPath": "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGameMechanic/AsteroidGameMechanic.csproj",
+        "packagesPath": "/home/fecsx/.nuget/packages/",
+        "outputPath": "/home/fecsx/Documents/Iskola/3. félév/third_semester/EVA/AsteroidGame/AsteroidGameMechanic/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/fecsx/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/fecsx/.dotnet/sdk/8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
