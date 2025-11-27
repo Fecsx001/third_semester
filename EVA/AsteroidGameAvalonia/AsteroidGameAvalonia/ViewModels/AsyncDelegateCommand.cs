@@ -11,7 +11,7 @@ namespace AsteroidGameAvalonia.ViewModels
         private readonly Func<object, Task> _executeAsync;
         private readonly Func<object, bool> _canExecute;
 
-        public event EventHandler CanExecuteChanged;
+        public event EventHandler? CanExecuteChanged;
 
         public AsyncDelegateCommand(Func<object, Task> executeAsync, Func<object, bool> canExecute = null)
         {
@@ -21,7 +21,6 @@ namespace AsteroidGameAvalonia.ViewModels
 
         public bool CanExecute(object parameter) => _canExecute?.Invoke(parameter) ?? true;
 
-        // Fire-and-forget wrapper for async Execute (common pattern for ICommand)
         public async void Execute(object parameter)
         {
             try
@@ -30,11 +29,9 @@ namespace AsteroidGameAvalonia.ViewModels
             }
             catch
             {
-                // swallow or log as appropriate for your app
             }
         }
 
-        // Ensure the event is raised on the UI thread
         public void RaiseCanExecuteChanged()
         {
             var handler = CanExecuteChanged;

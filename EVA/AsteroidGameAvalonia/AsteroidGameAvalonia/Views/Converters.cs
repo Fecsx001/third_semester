@@ -69,11 +69,29 @@ namespace AsteroidGameAvalonia.Views
     {
         public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
         {
-            if (value is double size && parameter is string paramString && 
+            // Handle both int and double types
+            double size = 0;
+            if (value is int intSize)
+            {
+                size = (double)intSize;
+            }
+            else if (value is double doubleSize)
+            {
+                size = doubleSize;
+            }
+            else
+            {
+                return value;
+            }
+
+            // Parse the factor parameter
+            if (parameter is string paramString && 
                 double.TryParse(paramString, NumberStyles.Any, CultureInfo.InvariantCulture, out double factor))
             {
-                return size * factor;
+                double craterSize = size * factor;
+                return craterSize;
             }
+            
             return value;
         }
         public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture) => throw new NotImplementedException();
