@@ -17,6 +17,7 @@ namespace AsteroidGameAvalonia.ViewModels
         private readonly IGamePersistence _persistence;
         private readonly IHighScoreManager _highScoreManager;
         private readonly IDialogService _dialogService;
+        private int _currentSpawnYOffset;
 
         private Thickness _spaceshipPosition;
 
@@ -61,6 +62,7 @@ namespace AsteroidGameAvalonia.ViewModels
             _dialogService = dialogService;
             
             _gameModel = new GameModel(800, 600, _highScoreManager, _persistence);
+            _currentSpawnYOffset = 50;
             Asteroids = new ObservableCollection<Asteroid>();
 
             _gameModel.GameOver += OnGameOver;
@@ -97,6 +99,25 @@ namespace AsteroidGameAvalonia.ViewModels
         {
             _gameModel.Stop();
             _gameModel = new GameModel(width, height, _highScoreManager, _persistence);
+            _currentSpawnYOffset = 50;
+
+            _gameModel.GameOver += OnGameOver;
+            _gameModel.ScoreChanged += OnModelUpdate;
+            _gameModel.GameTimeChanged += OnModelUpdate;
+            _gameModel.HighScoreChanged += OnModelUpdate;
+
+            _gameModel.StartGame();
+
+            OnPropertyChanged(nameof(ScreenWidth));
+            OnPropertyChanged(nameof(ScreenHeight));
+            OnModelUpdate(this, EventArgs.Empty);
+        }
+
+        public void SetSize(int width, int height, int spawnYOffset)
+        {
+            _gameModel.Stop();
+            _gameModel = new GameModel(width, height, _highScoreManager, _persistence, spawnYOffset);
+            _currentSpawnYOffset = spawnYOffset;
 
             _gameModel.GameOver += OnGameOver;
             _gameModel.ScoreChanged += OnModelUpdate;
@@ -133,7 +154,6 @@ namespace AsteroidGameAvalonia.ViewModels
                 {
                     Asteroids.Add(asteroid);
                 }
-                // Raise CanExecute on either DelegateCommand or AsyncDelegateCommand
                 (SaveGameCommand as dynamic)?.RaiseCanExecuteChanged();
             });
         }
@@ -183,7 +203,6 @@ namespace AsteroidGameAvalonia.ViewModels
 
                     await _persistence.SaveGameAsync(filePath, gameData).ConfigureAwait(false);
 
-                    // Show dialog on UI thread
                     Dispatcher.UIThread.Post(() => _dialogService.ShowMessage("Game saved successfully!", "Save Game"));
                 }
             }
@@ -209,10 +228,9 @@ namespace AsteroidGameAvalonia.ViewModels
                         asteroids.Add(new Asteroid(ad.X, ad.Y, gameData.ScreenHeight, ad.BaseSize, ad.Speed));
                     }
                     
-                    // Apply model changes on UI thread
                     Dispatcher.UIThread.Post(() =>
                     {
-                        _gameModel = new GameModel(gameData.ScreenWidth, gameData.ScreenHeight, _highScoreManager, _persistence);
+                        _gameModel = new GameModel(gameData.ScreenWidth, gameData.ScreenHeight, _highScoreManager, _persistence, _currentSpawnYOffset);
                         _gameModel.GameOver += OnGameOver;
                         _gameModel.ScoreChanged += OnModelUpdate;
                         _gameModel.GameTimeChanged += OnModelUpdate;

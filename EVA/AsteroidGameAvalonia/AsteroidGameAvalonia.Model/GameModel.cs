@@ -10,6 +10,7 @@ namespace AsteroidGameAvalonia.Model
         private readonly IHighScoreManager _highScoreManager;
         private readonly IGamePersistence _gamePersistence;
         private readonly Random _random;
+        private readonly int _spawnYOffset;
         private int _score;
         private bool _isGameOver;
         private bool _isPaused;
@@ -35,13 +36,14 @@ namespace AsteroidGameAvalonia.Model
         public event EventHandler? GameTimeChanged;
         public event EventHandler? HighScoreChanged;
 
-        public GameModel(int screenWidth, int screenHeight, IHighScoreManager highScoreManager, IGamePersistence gamePersistence)
+        public GameModel(int screenWidth, int screenHeight, IHighScoreManager highScoreManager, IGamePersistence gamePersistence, int spawnYOffset = 50)
         {
             ScreenWidth = screenWidth;
             ScreenHeight = screenHeight;
             _highScoreManager = highScoreManager;
             _gamePersistence = gamePersistence;
             _random = new Random();
+            _spawnYOffset = spawnYOffset;
             Asteroids = new List<Asteroid>();
             HighScore = _highScoreManager.LoadHighScore();
             
@@ -55,7 +57,7 @@ namespace AsteroidGameAvalonia.Model
 
         private void InitializeGame()
         {
-            Spaceship = new Spaceship(ScreenWidth / 2, ScreenHeight - 50, ScreenWidth);
+            Spaceship = new Spaceship(ScreenWidth / 2, ScreenHeight - _spawnYOffset, ScreenWidth);
             Asteroids.Clear();
             _score = 0;
             _isGameOver = false;
@@ -217,13 +219,12 @@ namespace AsteroidGameAvalonia.Model
 
         public void SetGameState(int score, TimeSpan gameTime, int spaceshipX, List<Asteroid> asteroids)
         {
-            // _timer.Stop(); // <-- EZT A SORT TÖRÖLD KI
             _score = score;
             _gameTime = gameTime;
             _isGameOver = false;
             _isPaused = true;
             
-            Spaceship = new Spaceship(spaceshipX, ScreenHeight - 50, ScreenWidth);
+            Spaceship = new Spaceship(spaceshipX, ScreenHeight - _spawnYOffset, ScreenWidth);
             Asteroids = asteroids;
             
             ScoreChanged?.Invoke(this, EventArgs.Empty);
