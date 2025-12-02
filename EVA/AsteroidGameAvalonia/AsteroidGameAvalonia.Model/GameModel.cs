@@ -1,5 +1,4 @@
 using System.Drawing;
-using System.Security.Principal;
 using System.Timers;
 using AsteroidGameAvalonia.Persistance;
 
@@ -8,7 +7,6 @@ namespace AsteroidGameAvalonia.Model
     public class GameModel : IDisposable
     {
         private readonly IHighScoreManager _highScoreManager;
-        private readonly IGamePersistence _gamePersistence;
         private readonly Random _random;
         private readonly int _spawnYOffset;
         private int _score;
@@ -36,12 +34,11 @@ namespace AsteroidGameAvalonia.Model
         public event EventHandler? GameTimeChanged;
         public event EventHandler? HighScoreChanged;
 
-        public GameModel(int screenWidth, int screenHeight, IHighScoreManager highScoreManager, IGamePersistence gamePersistence, int spawnYOffset = 50)
+        public GameModel(int screenWidth, int screenHeight, IHighScoreManager highScoreManager, int spawnYOffset = 50)
         {
             ScreenWidth = screenWidth;
             ScreenHeight = screenHeight;
             _highScoreManager = highScoreManager;
-            _gamePersistence = gamePersistence;
             _random = new Random();
             _spawnYOffset = spawnYOffset;
             Asteroids = new List<Asteroid>();
@@ -263,6 +260,28 @@ namespace AsteroidGameAvalonia.Model
         {
             Stop();
             GC.SuppressFinalize(this);
+        }
+
+        public void UpdateScreenSize(int newWidth, int newHeight)
+        {
+            ScreenWidth = newWidth;
+            ScreenHeight = newHeight;
+
+            // Update spaceship position to ensure it stays within bounds
+            Spaceship = new Spaceship(Spaceship.X, ScreenHeight - _spawnYOffset, ScreenWidth);
+
+            // Ensure asteroids are within the new screen bounds
+            foreach (var asteroid in Asteroids)
+            {
+                if (asteroid.X + asteroid.Width > ScreenWidth)
+                {
+                    asteroid.MoveTo(ScreenWidth - asteroid.Width, asteroid.Y);
+                }
+                if (asteroid.Y + asteroid.Height > ScreenHeight)
+                {
+                    asteroid.MoveTo(asteroid.X, ScreenHeight - asteroid.Height);
+                }
+            }
         }
     }
 }

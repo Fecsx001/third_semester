@@ -26,5 +26,11 @@
         {
             Y += Speed;
         }
+
+        public void MoveTo(int newX, int newY)
+        {
+            X = newX;
+            Y = newY;
+        }
     }
 }

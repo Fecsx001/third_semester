@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Avalonia;
 using Avalonia.Controls;
@@ -43,36 +43,34 @@ namespace AsteroidGameAvalonia.Services
             return true;
         }
 
-        public string? ShowSaveDialog(string filter, string defaultExt, string initialDirectory)
+        public async Task<string?> ShowSaveDialogAsync(string filter, string defaultExt, string initialDirectory)
         {
             var topLevel = GetTopLevel();
             if (topLevel == null) return null;
 
-            var task = topLevel.StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions
+            var result = await topLevel.StorageProvider.SaveFilePickerAsync(new FilePickerSaveOptions
             {
                 Title = "Save Game",
                 DefaultExtension = defaultExt,
                 FileTypeChoices = new[] { new FilePickerFileType("Asteroid Save") { Patterns = new[] { "*.save" } } }
             });
 
-            task.Wait(); 
-            return task.Result?.Path.LocalPath;
+            return result?.Path.LocalPath;
         }
 
-        public string? ShowOpenDialog(string filter, string defaultExt, string initialDirectory)
+        public async Task<string?> ShowOpenDialogAsync(string filter, string defaultExt, string initialDirectory)
         {
             var topLevel = GetTopLevel();
             if (topLevel == null) return null;
 
-            var task = topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
+            var result = await topLevel.StorageProvider.OpenFilePickerAsync(new FilePickerOpenOptions
             {
                 Title = "Load Game",
                 AllowMultiple = false,
                 FileTypeFilter = new[] { new FilePickerFileType("Asteroid Save") { Patterns = new[] { "*.save" } } }
             });
 
-            task.Wait();
-            return task.Result.Count > 0 ? task.Result[0].Path.LocalPath : null;
+            return result.Count > 0 ? result[0].Path.LocalPath : null;
         }
     }
 }

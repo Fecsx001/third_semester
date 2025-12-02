@@ -1,12 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using AsteroidGameAvalonia.Model;
+﻿using AsteroidGameAvalonia.Model;
 using AsteroidGameAvalonia.Persistance;
 using Moq;
-using System.IO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AsteroidGameAvalonia.Tests
 {
@@ -34,7 +28,7 @@ namespace AsteroidGameAvalonia.Tests
         [TestMethod]
         public void HighScoreManager_LoadHighScore_ReturnsZeroForNonExistentFile()
         {
-            var manager = new Moq.Mock<IHighScoreManager>();
+            var manager = new Mock<IHighScoreManager>();
             manager.Setup(m => m.LoadHighScore()).Returns(0);
 
             int score = manager.Object.LoadHighScore();
@@ -52,7 +46,6 @@ namespace AsteroidGameAvalonia.Tests
 
             Assert.AreEqual(500, score, "A betöltött pontszám nem egyezik a mentettel.");
         }
-        
 
         [TestMethod]
         public async Task GamePersistence_Load()
@@ -72,11 +65,11 @@ namespace AsteroidGameAvalonia.Tests
                 }
             });
             manager.Setup(m => m.SaveGameAsync(It.IsAny<string>(), It.IsAny<GameData>())).Verifiable();
-            
+
             var highscore = new Mock<IHighScoreManager>();
             highscore.Setup(m => m.LoadHighScore()).Returns(500);
 
-            var originalModel = new GameModel(800, 600, highscore.Object, manager.Object);
+            var originalModel = new GameModel(800, 600, highscore.Object);
 
             var asteroids = new List<Asteroid>
             {
@@ -95,7 +88,7 @@ namespace AsteroidGameAvalonia.Tests
             Assert.AreEqual(originalModel.ScreenHeight, loadedData.ScreenHeight);
 
             Assert.AreEqual(2, loadedData.Asteroids.Count, "Az aszteroidák száma nem egyezik.");
-            
+
             Assert.AreEqual(asteroids[0].X, loadedData.Asteroids[0].X);
             Assert.AreEqual(asteroids[0].Y, loadedData.Asteroids[0].Y);
             Assert.AreEqual(30, loadedData.Asteroids[0].BaseSize);

@@ -12,32 +12,28 @@ namespace AsteroidGameAvalonia.Tests
     [TestClass]
     public class GameModelTests : IDisposable
     {
-        private const int SCREEN_WIDTH = 800;
-        private const int SCREEN_HEIGHT = 600;
+        private const int ScreenWidth = 800;
+        private const int ScreenHeight = 600;
         private GameModel _gameModel = null!;
         private Mock<IHighScoreManager> _mockHighScoreManager = null!;
-        private Mock<IGamePersistence> _mockGamePersistence = null!;
+        private int _mockPersistenceValue;
 
         private int _scoreChangedCount;
         private int _gameOverCount;
-        private int _highScoreChangedCount;
 
         [TestInitialize]
         public void TestInitialize()
         {
             _mockHighScoreManager = new Mock<IHighScoreManager>();
             _mockHighScoreManager.Setup(m => m.LoadHighScore()).Returns(0);
-            _mockGamePersistence = new Mock<IGamePersistence>();
-            _gameModel = new GameModel(SCREEN_WIDTH, SCREEN_HEIGHT, _mockHighScoreManager.Object,
-                _mockGamePersistence.Object);
+            _mockPersistenceValue = 50; // Replace with appropriate default value
+            _gameModel = new GameModel(ScreenWidth, ScreenHeight, _mockHighScoreManager.Object, _mockPersistenceValue);
 
             _scoreChangedCount = 0;
             _gameOverCount = 0;
-            _highScoreChangedCount = 0;
 
-            _gameModel.ScoreChanged += (s, e) => _scoreChangedCount++;
-            _gameModel.GameOver += (s, e) => _gameOverCount++;
-            _gameModel.HighScoreChanged += (s, e) => _highScoreChangedCount++;
+            _gameModel.ScoreChanged += (_, _) => _scoreChangedCount++;
+            _gameModel.GameOver += (_, _) => _gameOverCount++;
         }
 
         [TestCleanup]
@@ -74,8 +70,8 @@ namespace AsteroidGameAvalonia.Tests
             Assert.IsNotNull(_gameModel.Spaceship);
             Assert.IsNotNull(_gameModel.Asteroids);
             Assert.AreEqual(0, _gameModel.Asteroids.Count);
-            Assert.AreEqual(SCREEN_WIDTH / 2, _gameModel.Spaceship.X);
-            Assert.AreEqual(SCREEN_HEIGHT - 50, _gameModel.Spaceship.Y);
+            Assert.AreEqual(ScreenWidth / 2, _gameModel.Spaceship.X);
+            Assert.AreEqual(ScreenHeight - 50, _gameModel.Spaceship.Y);
 
             _mockHighScoreManager.Verify(m => m.LoadHighScore(), Times.Once());
         }
@@ -103,7 +99,7 @@ namespace AsteroidGameAvalonia.Tests
             CallGameTick(_gameModel, TimeSpan.FromSeconds(0.1));
 
             Assert.IsTrue(_gameModel.Spaceship.X > initialX);
-            Assert.IsTrue(_gameModel.Spaceship.X <= SCREEN_WIDTH - _gameModel.Spaceship.Width);
+            Assert.IsTrue(_gameModel.Spaceship.X <= ScreenWidth - _gameModel.Spaceship.Width);
         }
 
         [TestMethod]
@@ -125,7 +121,7 @@ namespace AsteroidGameAvalonia.Tests
                 _gameModel.Asteroids.Clear();
             }
 
-            int expectedMaxX = SCREEN_WIDTH - _gameModel.Spaceship.Width;
+            int expectedMaxX = ScreenWidth - _gameModel.Spaceship.Width;
             Assert.AreEqual(expectedMaxX, _gameModel.Spaceship.X);
         }
 
@@ -162,7 +158,7 @@ namespace AsteroidGameAvalonia.Tests
             {
                 Assert.IsTrue(asteroid.Y <= 0);
                 Assert.IsTrue(asteroid.X >= 20);
-                Assert.IsTrue(asteroid.X <= SCREEN_WIDTH - 50);
+                Assert.IsTrue(asteroid.X <= ScreenWidth - 50);
             }
         }
 
@@ -175,7 +171,7 @@ namespace AsteroidGameAvalonia.Tests
             var collidingAsteroid = new Asteroid(
                 spaceship.X,
                 spaceship.Y,
-                SCREEN_HEIGHT,
+                ScreenHeight,
                 30,
                 5
             );
@@ -194,7 +190,7 @@ namespace AsteroidGameAvalonia.Tests
             var safeAsteroid = new Asteroid(
                 100,
                 100,
-                SCREEN_HEIGHT,
+                ScreenHeight,
                 30,
                 5
             );
@@ -214,9 +210,9 @@ namespace AsteroidGameAvalonia.Tests
             var initialEventCount = _scoreChangedCount;
 
             var passingAsteroid = new Asteroid(
-                SCREEN_WIDTH / 2,
-                SCREEN_HEIGHT - 1,
-                SCREEN_HEIGHT,
+                ScreenWidth / 2,
+                ScreenHeight - 1,
+                ScreenHeight,
                 30,
                 5
             );
@@ -259,7 +255,7 @@ namespace AsteroidGameAvalonia.Tests
         [TestMethod]
         public void Test_PauseFunctionality_NoUpdateWhenPaused()
         {
-            var asteroid = new Asteroid(100, 100, SCREEN_HEIGHT, 30, 5);
+            var asteroid = new Asteroid(100, 100, ScreenHeight, 30, 5);
             _gameModel.Asteroids.Add(asteroid);
             var initialY = asteroid.Y;
 
@@ -275,18 +271,18 @@ namespace AsteroidGameAvalonia.Tests
         {
             var mockMgr = new Mock<IHighScoreManager>();
             mockMgr.Setup(m => m.LoadHighScore()).Returns(100);
-            var mockPersistence = new Mock<IGamePersistence>();
-            var highScoreModel = new GameModel(SCREEN_WIDTH, SCREEN_HEIGHT, mockMgr.Object, mockPersistence.Object);
+            var mockPersistenceValue = 50; // Replace with appropriate default value
+            var highScoreModel = new GameModel(ScreenWidth, ScreenHeight, mockMgr.Object, mockPersistenceValue);
 
             int highScoreChanged = 0;
-            highScoreModel.HighScoreChanged += (s, e) => highScoreChanged++;
+            highScoreModel.HighScoreChanged += (_, _) => highScoreChanged++;
 
             SetPrivateField(highScoreModel, "_score", 150);
 
             var collidingAsteroid = new Asteroid(
                 highScoreModel.Spaceship.X,
                 highScoreModel.Spaceship.Y,
-                SCREEN_HEIGHT,
+                ScreenHeight,
                 30,
                 5
             );
@@ -306,18 +302,18 @@ namespace AsteroidGameAvalonia.Tests
         {
             var mockMgr = new Mock<IHighScoreManager>();
             mockMgr.Setup(m => m.LoadHighScore()).Returns(100);
-            var mockPersistence = new Mock<IGamePersistence>();
-            var highScoreModel = new GameModel(SCREEN_WIDTH, SCREEN_HEIGHT, mockMgr.Object, mockPersistence.Object);
+            var mockPersistenceValue = 50; // Replace with appropriate default value
+            var highScoreModel = new GameModel(ScreenWidth, ScreenHeight, mockMgr.Object, mockPersistenceValue);
 
             int highScoreChanged = 0;
-            highScoreModel.HighScoreChanged += (s, e) => highScoreChanged++;
+            highScoreModel.HighScoreChanged += (_, _) => highScoreChanged++;
 
             SetPrivateField(highScoreModel, "_score", 50);
 
             var collidingAsteroid = new Asteroid(
                 highScoreModel.Spaceship.X,
                 highScoreModel.Spaceship.Y,
-                SCREEN_HEIGHT,
+                ScreenHeight,
                 30,
                 5
             );
@@ -353,8 +349,8 @@ namespace AsteroidGameAvalonia.Tests
         {
             var asteroids = new List<Asteroid>
             {
-                new Asteroid(100, 200, SCREEN_HEIGHT, 25, 5),
-                new Asteroid(300, 400, SCREEN_HEIGHT, 40, 3)
+                new Asteroid(100, 200, ScreenHeight, 25, 5),
+                new Asteroid(300, 400, ScreenHeight, 40, 3)
             };
 
             _gameModel.SetGameState(
@@ -418,13 +414,6 @@ namespace AsteroidGameAvalonia.Tests
             var field = obj.GetType().GetField(fieldName,
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
             field?.SetValue(obj, value);
-        }
-
-        private T GetPrivateField<T>(object obj, string fieldName)
-        {
-            var field = obj.GetType().GetField(fieldName,
-                System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-            return (T)field!.GetValue(obj)!;
         }
     }
 }

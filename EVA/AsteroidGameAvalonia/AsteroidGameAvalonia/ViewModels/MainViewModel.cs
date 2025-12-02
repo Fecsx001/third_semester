@@ -61,7 +61,7 @@ namespace AsteroidGameAvalonia.ViewModels
             _highScoreManager = highScoreManager;
             _dialogService = dialogService;
             
-            _gameModel = new GameModel(800, 600, _highScoreManager, _persistence);
+            _gameModel = new GameModel(800, 600, _highScoreManager, 50);
             _currentSpawnYOffset = 50;
             Asteroids = new ObservableCollection<Asteroid>();
 
@@ -84,12 +84,12 @@ namespace AsteroidGameAvalonia.ViewModels
                 }
                 else
                 {
-                    System.Environment.Exit(0);
+                    Environment.Exit(0);
                 }
             });
 
             ShowControlsCommand = new DelegateCommand(_ => ExecuteShowControls());
-            ShowAboutCommand = new DelegateCommand(_ => ExecuteShowAbout());
+            ShowAboutCommand = new DelegateCommand(_ => ExecuteShowAbout()); 
 
             _gameModel.StartGame();
             UpdateSpaceshipPosition();
@@ -97,16 +97,7 @@ namespace AsteroidGameAvalonia.ViewModels
 
         public void SetSize(int width, int height)
         {
-            _gameModel.Stop();
-            _gameModel = new GameModel(width, height, _highScoreManager, _persistence);
-            _currentSpawnYOffset = 50;
-
-            _gameModel.GameOver += OnGameOver;
-            _gameModel.ScoreChanged += OnModelUpdate;
-            _gameModel.GameTimeChanged += OnModelUpdate;
-            _gameModel.HighScoreChanged += OnModelUpdate;
-
-            _gameModel.StartGame();
+            _gameModel.UpdateScreenSize(width, height);
 
             OnPropertyChanged(nameof(ScreenWidth));
             OnPropertyChanged(nameof(ScreenHeight));
@@ -115,16 +106,8 @@ namespace AsteroidGameAvalonia.ViewModels
 
         public void SetSize(int width, int height, int spawnYOffset)
         {
-            _gameModel.Stop();
-            _gameModel = new GameModel(width, height, _highScoreManager, _persistence, spawnYOffset);
             _currentSpawnYOffset = spawnYOffset;
-
-            _gameModel.GameOver += OnGameOver;
-            _gameModel.ScoreChanged += OnModelUpdate;
-            _gameModel.GameTimeChanged += OnModelUpdate;
-            _gameModel.HighScoreChanged += OnModelUpdate;
-
-            _gameModel.StartGame();
+            _gameModel.UpdateScreenSize(width, height);
 
             OnPropertyChanged(nameof(ScreenWidth));
             OnPropertyChanged(nameof(ScreenHeight));
@@ -183,7 +166,7 @@ namespace AsteroidGameAvalonia.ViewModels
         {
             try
             {
-                string? filePath = _dialogService.ShowSaveDialog("Asteroid Game (*.save)|*.save", "save", _highScoreManager.GetSaveDirectory());
+                string? filePath = await _dialogService.ShowSaveDialogAsync("Asteroid Game (*.save)|*.save", "save", _highScoreManager.GetSaveDirectory());
                 if (!string.IsNullOrEmpty(filePath))
                 {
                     var gameData = new GameData
@@ -217,7 +200,7 @@ namespace AsteroidGameAvalonia.ViewModels
             _gameModel.Stop(); 
             try
             {
-                string? filePath = _dialogService.ShowOpenDialog("Asteroid Game (*.save)|*.save", "save", _highScoreManager.GetSaveDirectory());
+                string? filePath = await _dialogService.ShowOpenDialogAsync("Asteroid Game (*.save)|*.save", "save", _highScoreManager.GetSaveDirectory());
                 if (!string.IsNullOrEmpty(filePath))
                 {
                     var gameData = await _persistence.LoadGameAsync(filePath).ConfigureAwait(false);
@@ -230,7 +213,7 @@ namespace AsteroidGameAvalonia.ViewModels
                     
                     Dispatcher.UIThread.Post(() =>
                     {
-                        _gameModel = new GameModel(gameData.ScreenWidth, gameData.ScreenHeight, _highScoreManager, _persistence, _currentSpawnYOffset);
+                        _gameModel = new GameModel(gameData.ScreenWidth, gameData.ScreenHeight, _highScoreManager, _currentSpawnYOffset);
                         _gameModel.GameOver += OnGameOver;
                         _gameModel.ScoreChanged += OnModelUpdate;
                         _gameModel.GameTimeChanged += OnModelUpdate;
